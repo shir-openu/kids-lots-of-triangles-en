@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>שאלה 6 - מרחק מחיפה - מילוי טבלה</title>
+<title>Question 6 - Distance from Haifa - Fill Table</title>
 <style>
   :root {
     --bg: #ffffff;
@@ -331,12 +331,12 @@
 <body>
 
 <div class="container">
-  <div class="title">שאלה 6 - קריאת גרף: מרחק מחיפה</div>
+  <div class="title">Question 6 - Reading a Graph: Distance from Haifa</div>
 
   <div class="exercise">
     <div class="problem-text">
-      <strong>משאית יצאה מחיפה. במהלך הנסיעה עצרה פעמיים.</strong><br>
-      הגרף שלפניכם מתאר את המרחק מחיפה בהתאם לזמן שעבר מתחילת הנסיעה.
+      <strong>A truck left Haifa. During the trip it stopped twice.</strong><br>
+      The graph below describes the distance from Haifa as a function of time elapsed since the start of the trip.
     </div>
 
     <div class="graph-container">
@@ -376,7 +376,7 @@
         <text x="50" y="215" text-anchor="end" font-size="14" fill="#333">150</text>
         <text x="50" y="165" text-anchor="end" font-size="14" fill="#333">200</text>
         <text x="50" y="115" text-anchor="end" font-size="14" fill="#333">250</text>
-        <text x="25" y="200" text-anchor="middle" font-size="14" fill="#7c3aed" transform="rotate(-90, 25, 200)">מרחק מחיפה (ק"מ)</text>
+        <text x="25" y="200" text-anchor="middle" font-size="14" fill="#7c3aed" transform="rotate(-90, 25, 200)">Distance from Haifa (km)</text>
 
         <!-- X axis labels (hours) -->
         <text x="60" y="380" text-anchor="middle" font-size="14" fill="#333">0</text>
@@ -388,7 +388,7 @@
         <text x="430" y="380" text-anchor="middle" font-size="14" fill="#333">5</text>
         <text x="504" y="380" text-anchor="middle" font-size="14" fill="#333">6</text>
         <text x="578" y="380" text-anchor="middle" font-size="14" fill="#333">7</text>
-        <text x="320" y="405" text-anchor="middle" font-size="14" fill="#7c3aed">זמן (שעות)</text>
+        <text x="320" y="405" text-anchor="middle" font-size="14" fill="#7c3aed">Time (hours)</text>
 
         <!-- The graph line -->
         <polyline
@@ -430,13 +430,13 @@
       </svg>
     </div>
 
-    <div class="section-title">א. השלימו את הטבלה על סמך הגרף</div>
-    <div class="instruction">מצאו את המרחק מחיפה (y) עבור כל ערך של זמן (x) בגרף:</div>
+    <div class="section-title">A. Complete the table based on the graph</div>
+    <div class="instruction">Find the distance from Haifa (y) for each time value (x) in the graph:</div>
 
     <table class="data-table">
       <thead>
         <tr>
-          <th>זמן (שעות)</th>
+          <th>Time (hours)</th>
           <th>x = 1</th>
           <th>x = 3</th>
           <th>x = 3.5</th>
@@ -446,14 +446,14 @@
       </thead>
       <tbody>
         <tr>
-          <td style="background: #e0f2f1; font-weight: bold; color: #14b8a6;">מרחק מחיפה<br>(ק"מ)</td>
+          <td style="background: #e0f2f1; font-weight: bold; color: #14b8a6;">Distance from Haifa<br>(km)</td>
           <td>
             <div class="cell-wrapper">
               <div>
                 <input type="text" class="answer-input" id="ans-1" placeholder="?" maxlength="4">
                 <span class="success-icon" id="ok-1">✓</span>
               </div>
-              <button class="check-btn" id="btn-1" onclick="checkAnswer('1', 50)">בדוק</button>
+              <button class="check-btn" id="btn-1" onclick="checkAnswer('1', 50)">Check</button>
               <div class="hint-text" id="hint-1"></div>
             </div>
           </td>
@@ -463,7 +463,7 @@
                 <input type="text" class="answer-input" id="ans-3" placeholder="?" maxlength="4">
                 <span class="success-icon" id="ok-3">✓</span>
               </div>
-              <button class="check-btn" id="btn-3" onclick="checkAnswer('3', 200)">בדוק</button>
+              <button class="check-btn" id="btn-3" onclick="checkAnswer('3', 200)">Check</button>
               <div class="hint-text" id="hint-3"></div>
             </div>
           </td>
@@ -473,7 +473,7 @@
                 <input type="text" class="answer-input" id="ans-35" placeholder="?" maxlength="4">
                 <span class="success-icon" id="ok-35">✓</span>
               </div>
-              <button class="check-btn" id="btn-35" onclick="checkAnswer('35', 200)">בדוק</button>
+              <button class="check-btn" id="btn-35" onclick="checkAnswer('35', 200)">Check</button>
               <div class="hint-text" id="hint-35"></div>
             </div>
           </td>
@@ -483,7 +483,7 @@
                 <input type="text" class="answer-input" id="ans-4" placeholder="?" maxlength="4">
                 <span class="success-icon" id="ok-4">✓</span>
               </div>
-              <button class="check-btn" id="btn-4" onclick="checkAnswer('4', 150)">בדוק</button>
+              <button class="check-btn" id="btn-4" onclick="checkAnswer('4', 150)">Check</button>
               <div class="hint-text" id="hint-4"></div>
             </div>
           </td>
@@ -493,7 +493,7 @@
                 <input type="text" class="answer-input" id="ans-7" placeholder="?" maxlength="4">
                 <span class="success-icon" id="ok-7">✓</span>
               </div>
-              <button class="check-btn" id="btn-7" onclick="checkAnswer('7', 0)">בדוק</button>
+              <button class="check-btn" id="btn-7" onclick="checkAnswer('7', 0)">Check</button>
               <div class="hint-text" id="hint-7"></div>
             </div>
           </td>
@@ -501,14 +501,14 @@
       </tbody>
     </table>
 
-    <div class="progress-text">התקדמות: <span id="progress-count">0</span>/5</div>
+    <div class="progress-text">Progress: <span id="progress-count">0</span>/5</div>
     <div class="progress-bar">
       <div class="progress-fill" id="progress-fill"></div>
     </div>
 
     <div class="completion-msg" id="completion">
-      <h3>🎉 כל הכבוד! מילאת את כל הטבלה נכון!</h3>
-      <p>הצלחת לקרוא את כל הערכים מהגרף בצורה מושלמת!</p>
+      <h3>🎉 Well done! You filled in the entire table correctly!</h3>
+      <p>You successfully read all the values from the graph perfectly!</p>
     </div>
   </div>
 </div>
@@ -517,11 +517,11 @@
 
 <script>
 const hints = {
-  '1': ['מצא את x=1 על ציר הזמן', 'עלה ישר למעלה עד הגרף', 'קרא את ערך y בציר המרחק'],
-  '3': ['מצא את x=3 על ציר הזמן', 'זו נקודה על הגרף - עלה למעלה', 'הגרף מגיע לשיא כאן'],
-  '35': ['מצא את x=3.5 (בין 3 ל-4)', 'שים לב - הגרף שטוח כאן!', 'המשאית עצרה - המרחק לא משתנה'],
-  '4': ['מצא את x=4 על ציר הזמן', 'הגרף יורד כאן - המשאית חוזרת', 'קרא את ערך y'],
-  '7': ['מצא את x=7 על ציר הזמן', 'זו נקודת הסיום של הנסיעה', 'המשאית חזרה לחיפה!']
+  '1': ['Find x=1 on the time axis', 'Go straight up to the graph', 'Read the y value on the distance axis'],
+  '3': ['Find x=3 on the time axis', 'This is a point on the graph - go up', 'The graph reaches its peak here'],
+  '35': ['Find x=3.5 (between 3 and 4)', 'Note - the graph is flat here!', 'The truck stopped - distance does not change'],
+  '4': ['Find x=4 on the time axis', 'The graph descends here - the truck is returning', 'Read the y value'],
+  '7': ['Find x=7 on the time axis', 'This is the end point of the trip', 'The truck returned to Haifa!']
 };
 
 let attempts = {};
@@ -570,7 +570,7 @@ function checkAnswer(id, correct) {
     let hintText = '💡 ' + hints[id][hintIndex];
 
     if (attempts[id] >= 4) {
-      hintText = '🎯 התשובה: ' + correct;
+      hintText = '🎯 The answer: ' + correct;
     }
 
     hint.textContent = hintText;

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>שאלה 6 - ניתוח מרחק מחיפה</title>
+<title>Question 6 - Distance from Haifa Analysis</title>
 <style>
   :root {
     --bg: #ffffff;
@@ -299,162 +299,162 @@
 <body>
 
 <div class="container">
-  <div class="title">שאלה 6 - משאית מחיפה</div>
-  <div class="subtitle">ניתוח גרף מרחק-זמן</div>
+  <div class="title">Question 6 - Truck from Haifa</div>
+  <div class="subtitle">Distance-Time Graph Analysis</div>
 
   <div class="problem-statement">
-    <strong>משאית יצאה מחיפה. במהלך הנסיעה עצרה פעמיים.</strong><br>
-    הגרף שלפניכם מתאר את המרחק מחיפה בהתאם לזמן שעבר מתחילת הנסיעה.
+    <strong>A truck left Haifa. During the trip it stopped twice.</strong><br>
+    The graph below describes the distance from Haifa as a function of time elapsed since the start of the trip.
   </div>
 
   <div class="graphs-container">
     <div class="graph-box">
-      <h3>הגרף</h3>
-      <img src="page_5_q_6_graph.svg" alt="גרף מרחק מחיפה">
+      <h3>The Graph</h3>
+      <img src="page_5_q_6_graph.svg" alt="Distance from Haifa graph">
     </div>
     <div class="graph-box">
-      <h3>הטבלה</h3>
-      <img src="page_5_q_6_table.svg" alt="טבלת ערכים">
+      <h3>The Table</h3>
+      <img src="page_5_q_6_table.svg" alt="Value table">
     </div>
   </div>
 
-  <!-- שאלה ב -->
+  <!-- Question B -->
   <div class="exercise" id="ex-b">
-    <div class="exercise-title">ב. באילו פרקי זמן לא נסעה המשאית? הסבירו.</div>
-    <div class="question-text">בחרו את התשובה הנכונה:</div>
+    <div class="exercise-title">B. During which time periods was the truck not moving? Explain.</div>
+    <div class="question-text">Choose the correct answer:</div>
     <div class="options-container" id="options-b">
       <div class="option" onclick="selectOption('b', 0)">
         <span class="option-letter">1</span>
-        <span class="option-text">בין שעה 0 ל-1 ובין שעה 4 ל-5</span>
+        <span class="option-text">Between hour 0 and 1, and between hour 4 and 5</span>
       </div>
       <div class="option" onclick="selectOption('b', 1)">
         <span class="option-letter">2</span>
-        <span class="option-text">בין שעה 1 ל-2 ובין שעה 3 ל-3.5 (כי הגרף אופקי - המרחק לא משתנה)</span>
+        <span class="option-text">Between hour 1 and 2, and between hour 3 and 3.5 (graph is horizontal - distance unchanged)</span>
       </div>
       <div class="option" onclick="selectOption('b', 2)">
         <span class="option-letter">3</span>
-        <span class="option-text">בין שעה 5 ל-7 (כי הגרף יורד)</span>
+        <span class="option-text">Between hour 5 and 7 (graph descends)</span>
       </div>
       <div class="option" onclick="selectOption('b', 3)">
         <span class="option-letter">4</span>
-        <span class="option-text">המשאית נסעה כל הזמן ללא הפסקה</span>
+        <span class="option-text">The truck traveled continuously without stopping</span>
       </div>
     </div>
-    <button class="check-btn" id="btn-b" onclick="checkAnswer('b')">בדוק תשובה</button>
+    <button class="check-btn" id="btn-b" onclick="checkAnswer('b')">Check Answer</button>
     <div class="feedback-box" id="feedback-b"></div>
   </div>
 
-  <!-- שאלה ג -->
+  <!-- Question C -->
   <div class="exercise" id="ex-c">
-    <div class="exercise-title">ג. האם חזרה המשאית לחיפה? הסבירו.</div>
-    <div class="question-text">בחרו את התשובה הנכונה:</div>
+    <div class="exercise-title">C. Did the truck return to Haifa? Explain.</div>
+    <div class="question-text">Choose the correct answer:</div>
     <div class="options-container" id="options-c">
       <div class="option" onclick="selectOption('c', 0)">
         <span class="option-letter">1</span>
-        <span class="option-text">כן, המשאית חזרה לחיפה כי בזמן x=7 המרחק הוא y=0</span>
+        <span class="option-text">Yes, the truck returned to Haifa because at time x=7 the distance is y=0</span>
       </div>
       <div class="option" onclick="selectOption('c', 1)">
         <span class="option-letter">2</span>
-        <span class="option-text">לא, המשאית לא חזרה כי בסוף היא נשארה במרחק 100 ק"מ</span>
+        <span class="option-text">No, the truck did not return because at the end it remained 100 km away</span>
       </div>
       <div class="option" onclick="selectOption('c', 2)">
         <span class="option-letter">3</span>
-        <span class="option-text">לא ניתן לדעת מהגרף</span>
+        <span class="option-text">Cannot be determined from the graph</span>
       </div>
       <div class="option" onclick="selectOption('c', 3)">
         <span class="option-letter">4</span>
-        <span class="option-text">כן, כי היא עצרה פעמיים בדרך</span>
+        <span class="option-text">Yes, because it stopped twice on the way</span>
       </div>
     </div>
-    <button class="check-btn" id="btn-c" onclick="checkAnswer('c')">בדוק תשובה</button>
+    <button class="check-btn" id="btn-c" onclick="checkAnswer('c')">Check Answer</button>
     <div class="feedback-box" id="feedback-c"></div>
   </div>
 
-  <!-- שאלה ד -->
+  <!-- Question D -->
   <div class="exercise" id="ex-d">
-    <div class="exercise-title">ד. מה היה המרחק המרבי שלה מחיפה במהלך הנסיעה?</div>
-    <div class="question-text">בחרו את התשובה הנכונה:</div>
+    <div class="exercise-title">D. What was the maximum distance from Haifa during the trip?</div>
+    <div class="question-text">Choose the correct answer:</div>
     <div class="options-container" id="options-d">
       <div class="option" onclick="selectOption('d', 0)">
         <span class="option-letter">1</span>
-        <span class="option-text">100 ק"מ</span>
+        <span class="option-text">100 km</span>
       </div>
       <div class="option" onclick="selectOption('d', 1)">
         <span class="option-letter">2</span>
-        <span class="option-text">150 ק"מ</span>
+        <span class="option-text">150 km</span>
       </div>
       <div class="option" onclick="selectOption('d', 2)">
         <span class="option-letter">3</span>
-        <span class="option-text">200 ק"מ</span>
+        <span class="option-text">200 km</span>
       </div>
       <div class="option" onclick="selectOption('d', 3)">
         <span class="option-letter">4</span>
-        <span class="option-text">250 ק"מ</span>
+        <span class="option-text">250 km</span>
       </div>
     </div>
-    <button class="check-btn" id="btn-d" onclick="checkAnswer('d')">בדוק תשובה</button>
+    <button class="check-btn" id="btn-d" onclick="checkAnswer('d')">Check Answer</button>
     <div class="feedback-box" id="feedback-d"></div>
   </div>
 
-  <!-- שאלה ה -->
+  <!-- Question E -->
   <div class="exercise" id="ex-e">
-    <div class="exercise-title">ה. האם ייתכן שבשני זמנים שונים היה אותו מרחק מחיפה?</div>
-    <div class="question-text">בחרו את התשובה הנכונה:</div>
+    <div class="exercise-title">E. Is it possible that at two different times the distance from Haifa was the same?</div>
+    <div class="question-text">Choose the correct answer:</div>
     <div class="options-container" id="options-e">
       <div class="option" onclick="selectOption('e', 0)">
         <span class="option-letter">1</span>
-        <span class="option-text">כן, כי בדרך הלוך ובדרך חזור עברה המשאית באותם מרחקים</span>
+        <span class="option-text">Yes, on the way out and back the truck passed through the same distances</span>
       </div>
       <div class="option" onclick="selectOption('e', 1)">
         <span class="option-letter">2</span>
-        <span class="option-text">לא, לכל זמן יש מרחק שונה</span>
+        <span class="option-text">No, each time has a different distance</span>
       </div>
       <div class="option" onclick="selectOption('e', 2)">
         <span class="option-letter">3</span>
-        <span class="option-text">לא, כי זו פונקציה</span>
+        <span class="option-text">No, because it is a function</span>
       </div>
       <div class="option" onclick="selectOption('e', 3)">
         <span class="option-letter">4</span>
-        <span class="option-text">רק בזמן העצירות</span>
+        <span class="option-text">Only during stops</span>
       </div>
     </div>
-    <button class="check-btn" id="btn-e" onclick="checkAnswer('e')">בדוק תשובה</button>
+    <button class="check-btn" id="btn-e" onclick="checkAnswer('e')">Check Answer</button>
     <div class="feedback-box" id="feedback-e"></div>
   </div>
 
-  <!-- שאלה ו -->
+  <!-- Question F -->
   <div class="exercise" id="ex-f">
-    <div class="exercise-title">ו. האם y (המרחק) הוא פונקציה חד-חד-ערכית של x (הזמן)?</div>
-    <div class="question-text">בחרו את התשובה הנכונה:</div>
+    <div class="exercise-title">F. Is y (distance) a one-to-one function of x (time)?</div>
+    <div class="question-text">Choose the correct answer:</div>
     <div class="options-container" id="options-f">
       <div class="option" onclick="selectOption('f', 0)">
         <span class="option-letter">1</span>
-        <span class="option-text">כן, כי לכל זמן מתאים מרחק יחיד</span>
+        <span class="option-text">Yes, because each time corresponds to a unique distance</span>
       </div>
       <div class="option" onclick="selectOption('f', 1)">
         <span class="option-letter">2</span>
-        <span class="option-text">לא, כי יש מרחקים שמתאימים ליותר מזמן אחד (למשל 150 ק"מ בהלוך ובחזור)</span>
+        <span class="option-text">לא, כי יש מרחקים שמתאימים ליותר מזמן אחד (למשל 150 km בהלוך ובחזור)</span>
       </div>
       <div class="option" onclick="selectOption('f', 2)">
         <span class="option-letter">3</span>
-        <span class="option-text">כן, כי הגרף עולה ויורד</span>
+        <span class="option-text">Yes, because the graph rises and falls</span>
       </div>
       <div class="option" onclick="selectOption('f', 3)">
         <span class="option-letter">4</span>
-        <span class="option-text">לא ניתן לקבוע</span>
+        <span class="option-text">Cannot be determined</span>
       </div>
     </div>
-    <button class="check-btn" id="btn-f" onclick="checkAnswer('f')">בדוק תשובה</button>
+    <button class="check-btn" id="btn-f" onclick="checkAnswer('f')">Check Answer</button>
     <div class="feedback-box" id="feedback-f"></div>
 
     <div class="definition-box">
-      <strong>תזכורת:</strong> פונקציה <span class="highlight">חד-חד-ערכית</span> היא פונקציה שבה לכל ערך y מתאים לכל היותר ערך x אחד.
-      במילים אחרות: כל קו אופקי חותך את הגרף לכל היותר בנקודה אחת.
+      <strong>Reminder:</strong> A <span class="highlight">one-to-one</span> function is one where each y value corresponds to at most one x value.
+      In other words: every horizontal line intersects the graph at most at one point.
     </div>
   </div>
 
   <div class="score-container" id="score-container" style="display: none;">
-    <div class="score-title">סיימת את כל השאלות!</div>
+    <div class="score-title">You completed all questions!</div>
     <div class="score-value"><span id="final-score">0</span>/5</div>
   </div>
 </div>
@@ -463,33 +463,33 @@
 
 <script>
 const correctAnswers = {
-  'b': 1,  // בין שעה 1-2 ו-3-3.5 (גרף אופקי)
-  'c': 0,  // כן, חזרה לחיפה (y=0 ב-x=7)
-  'd': 2,  // 200 ק"מ
-  'e': 0,  // כן, בהלוך ובחזור
-  'f': 1   // לא, לא חד-חד-ערכית
+  'b': 1,  // Between hour 1-2 and 3-3.5 (horizontal graph)
+  'c': 0,  // Yes, returned to Haifa (y=0 at x=7)
+  'd': 2,  // 200 km
+  'e': 0,  // Yes, on the way out and back
+  'f': 1   // No, not one-to-one
 };
 
 const feedbacks = {
   'b': {
-    correct: '✓ נכון! כאשר הגרף אופקי, המרחק מחיפה לא משתנה - כלומר המשאית עומדת במקום. זה קורה בין שעה 1 ל-2 ובין שעה 3 ל-3.5.',
-    wrong: '✗ לא נכון. חפשו את הקטעים שבהם הגרף אופקי (שטוח) - שם המשאית לא נעה כי המרחק לא משתנה.'
+    correct: 'Correct! When the graph is horizontal, the distance from Haifa does not change - the truck is stationary. This occurs between hour 1-2 and hour 3-3.5.',
+    wrong: 'Incorrect. Look for segments where the graph is horizontal (flat) - there the truck is not moving because the distance does not change.'
   },
   'c': {
-    correct: '✓ נכון! בסוף הנסיעה (בזמן x=7) הגרף מגיע לנקודה y=0, כלומר המשאית חזרה לחיפה.',
-    wrong: '✗ לא נכון. בדקו את הגרף בנקודה x=7 - מה ערך ה-y שם? האם הוא שווה ל-0?'
+    correct: 'Correct! At the end of the trip (at time x=7) the graph reaches y=0, meaning the truck returned to Haifa.',
+    wrong: 'Incorrect. Check the graph at point x=7 - what is the y value there? Is it equal to 0?'
   },
   'd': {
-    correct: '✓ נכון! הנקודה הגבוהה ביותר בגרף היא 200 ק"מ, וזה המרחק המרבי שהמשאית התרחקה מחיפה.',
-    wrong: '✗ לא נכון. המרחק המרבי הוא הנקודה הגבוהה ביותר בגרף (הפסגה).'
+    correct: '✓ Correct! הנקודה הגבוהה ביותר בגרף היא 200 km, וזה המרחק המרבי שהמשאית התרחקה מחיפה.',
+    wrong: 'Incorrect. The maximum distance is the highest point on the graph (the peak).'
   },
   'e': {
-    correct: '✓ נכון! כשהמשאית נסעה מחיפה והתרחקה, ואז חזרה - היא עברה באותם מרחקים פעמיים (פעם בהלוך ופעם בחזור).',
-    wrong: '✗ לא נכון. חשבו: כשהמשאית נוסעת הלוך וחזור, האם היא עוברת באותם מקומות יותר מפעם אחת?'
+    correct: 'Correct! When the truck traveled from Haifa and then returned, it passed through the same distances twice (once going and once returning).',
+    wrong: 'Incorrect. Think: when the truck travels back and forth, does it pass through the same locations more than once?'
   },
   'f': {
-    correct: '✓ נכון! הפונקציה אינה חד-חד-ערכית כי יש ערכי מרחק (y) שמתאימים ליותר מזמן אחד (x). למשל, קו אופקי ב-y=150 חותך את הגרף בשתי נקודות.',
-    wrong: '✗ לא נכון. בפונקציה חד-חד-ערכית, לכל ערך y מתאים לכל היותר ערך x אחד. האם זה המצב כאן?'
+    correct: 'Correct! The function is not one-to-one because there are distance values (y) that correspond to more than one time (x). For example, a horizontal line at y=150 intersects the graph at two points.',
+    wrong: 'Incorrect. In a one-to-one function, each y value corresponds to at most one x value. Is that the case here?'
   }
 };
 
@@ -514,7 +514,7 @@ function selectOption(question, optionIndex) {
 
 function checkAnswer(question) {
   if (selectedAnswers[question] === undefined) {
-    alert('אנא בחר תשובה');
+    alert('Please select an answer');
     return;
   }
 

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>עמוד 4: הצעות הגננים - אוריינות גרפית</title>
+    <title>Page 4: Gardener Proposals - Graph Literacy</title>
     <style>
         :root {
             --bg: #0b1220;
@@ -69,15 +69,15 @@
             background: rgba(0, 0, 0, 0.3);
             border-radius: 10px;
             padding: 15px 25px;
-            border-right: 4px solid;
+            border-left: 4px solid;
         }
 
         .gardener-card.oren {
-            border-right-color: var(--orange);
+            border-left-color: var(--orange);
         }
 
         .gardener-card.tomer {
-            border-right-color: var(--teal);
+            border-left-color: var(--teal);
         }
 
         .gardener-name {
@@ -234,7 +234,7 @@
             padding: 12px 15px;
             border-radius: 10px;
             margin-bottom: 10px;
-            border-right: 3px solid var(--purple);
+            border-left: 3px solid var(--purple);
         }
 
         .options {
@@ -401,20 +401,20 @@
 </head>
 <body>
     <div class="container">
-        <h1>הצעות הגננים - אוריינות גרפית</h1>
+        <h1>Gardener Proposals - Graph Literacy</h1>
 
         <div class="problem-statement">
-            <h3>הבעיה:</h3>
-            <p>אורן ותומר הם גננים. כל אחד מהם פרסם באתר השכונתי הצעת מחיר בעבור ייעוץ וטיפול בגינה.</p>
+            <h3>The Problem:</h3>
+            <p>Oren and Tomer are gardeners. Each of them posted a price proposal on the neighborhood website for consultation and garden maintenance.</p>
             <div class="gardener-info">
                 <div class="gardener-card oren">
-                    <div class="gardener-name">אורן</div>
-                    <div>700 שקלים לייעוץ ועוד 20 שקלים לגינון של כל מ"ר גינה</div>
+                    <div class="gardener-name">Oren</div>
+                    <div>700 shekels for consultation plus 20 shekels per sq. meter of garden</div>
                     <div style="color: #aaa; font-size: 0.9em; margin-top: 5px;">y = 700 + 20x</div>
                 </div>
                 <div class="gardener-card tomer">
-                    <div class="gardener-name">תומר</div>
-                    <div>48 שקלים לכל מ"ר גינה (הייעוץ כלול במחיר)</div>
+                    <div class="gardener-name">Tomer</div>
+                    <div>48 shekels per sq. meter of garden (consultation included)</div>
                     <div style="color: #aaa; font-size: 0.9em; margin-top: 5px;">y = 48x</div>
                 </div>
             </div>
@@ -422,7 +422,7 @@
 
         <div class="main-content">
             <div class="graph-container">
-                <div class="graph-title">גרף המחירים לפי שטח הגינה</div>
+                <div class="graph-title">Price Graph by Garden Area</div>
                 <svg viewBox="0 0 500 400" id="graph">
                     <!-- Grid lines -->
                     <g class="grid">
@@ -452,7 +452,7 @@
                     <text class="axis-label" x="312" y="370" text-anchor="middle">30</text>
                     <text class="axis-label" x="396" y="370" text-anchor="middle">40</text>
                     <text class="axis-label" x="480" y="370" text-anchor="middle">50</text>
-                    <text class="axis-label" x="270" y="395" text-anchor="middle" fill="#11a8a0">שטח הגינה (מ"ר)</text>
+                    <text class="axis-label" x="270" y="395" text-anchor="middle" fill="#11a8a0">Garden Area (sq. m)</text>
 
                     <!-- Y axis labels -->
                     <text class="axis-label" x="50" y="355" text-anchor="end">0</text>
@@ -461,7 +461,7 @@
                     <text class="axis-label" x="50" y="205" text-anchor="end">1200</text>
                     <text class="axis-label" x="50" y="155" text-anchor="end">1600</text>
                     <text class="axis-label" x="50" y="105" text-anchor="end">2000</text>
-                    <text class="axis-label" x="25" y="200" text-anchor="middle" transform="rotate(-90, 25, 200)" fill="#11a8a0">מחיר (שקלים)</text>
+                    <text class="axis-label" x="25" y="200" text-anchor="middle" transform="rotate(-90, 25, 200)" fill="#11a8a0">Price (shekels)</text>
 
                     <!-- Intersection helper lines -->
                     <line class="intersection-lines" id="int-h" x1="60" y1="170" x2="270" y2="170"/>
@@ -472,8 +472,8 @@
                         <line stroke="#fbbf24" stroke-width="1.5" stroke-dasharray="5,5" x1="202.8" y1="350" x2="202.8" y2="194"/>
                         <circle cx="202.8" cy="227.6" r="6" fill="#11a8a0" stroke="#fff" stroke-width="2"/>
                         <circle cx="202.8" cy="194" r="6" fill="#f59e0b" stroke="#fff" stroke-width="2"/>
-                        <text x="210" y="223" fill="#11a8a0" font-size="11">816 ש"ח</text>
-                        <text x="210" y="190" fill="#f59e0b" font-size="11">1040 ש"ח</text>
+                        <text x="210" y="223" fill="#11a8a0" font-size="11">816 NIS</text>
+                        <text x="210" y="190" fill="#f59e0b" font-size="11">1040 NIS</text>
                         <text x="202.8" y="365" fill="#fbbf24" font-size="11" text-anchor="middle">17</text>
                     </g>
 
@@ -493,11 +493,11 @@
                 <div class="legend">
                     <div class="legend-item">
                         <span class="legend-color oren"></span>
-                        <span>גרף I - אורן</span>
+                        <span>Graph I - Oren</span>
                     </div>
                     <div class="legend-item">
                         <span class="legend-color tomer"></span>
-                        <span>גרף II - תומר</span>
+                        <span>Graph II - Tomer</span>
                     </div>
                 </div>
             </div>
@@ -505,65 +505,65 @@
             <div class="questions-container">
                 <!-- Question A -->
                 <div class="question-card" id="q-a" data-question="a">
-                    <div class="question-header">א. איזה גרף, I או II, מתאר את ההצעה של אורן?</div>
+                    <div class="question-header">A. Which graph, I or II, describes Oren's proposal?</div>
                     <div class="options">
-                        <div class="option" data-answer="1" data-correct="true">גרף I</div>
-                        <div class="option" data-answer="2">גרף II</div>
-                        <div class="option" data-answer="3">שניהם</div>
-                        <div class="option" data-answer="4">אף אחד מהם</div>
+                        <div class="option" data-answer="1" data-correct="true">Graph I</div>
+                        <div class="option" data-answer="2">Graph II</div>
+                        <div class="option" data-answer="3">Both</div>
+                        <div class="option" data-answer="4">Neither</div>
                     </div>
                     <div class="feedback" id="feedback-a"></div>
                 </div>
 
                 <!-- Question B1 -->
                 <div class="question-card" id="q-b1" data-question="b1">
-                    <div class="question-header">ב. (1) מהו שטח הגינה שבעבורו הגננים אורן ותומר גובים את אותו המחיר?</div>
+                    <div class="question-header">B. (1) What is the garden area for which gardeners Oren and Tomer charge the same price?</div>
                     <div class="options">
-                        <div class="option" data-answer="20">20 מ"ר</div>
-                        <div class="option" data-answer="25" data-correct="true">25 מ"ר</div>
-                        <div class="option" data-answer="30">30 מ"ר</div>
-                        <div class="option" data-answer="35">35 מ"ר</div>
+                        <div class="option" data-answer="20">20 sq. m</div>
+                        <div class="option" data-answer="25" data-correct="true">25 sq. m</div>
+                        <div class="option" data-answer="30">30 sq. m</div>
+                        <div class="option" data-answer="35">35 sq. m</div>
                     </div>
                     <div class="feedback" id="feedback-b1"></div>
                 </div>
 
                 <!-- Question B2 -->
                 <div class="question-card" id="q-b2" data-question="b2">
-                    <div class="question-header">ב. (2) מהו המחיר בעבור השטח הזה?</div>
+                    <div class="question-header">B. (2) What is the price for that area?</div>
                     <div class="options">
-                        <div class="option" data-answer="1000">1,000 שקלים</div>
-                        <div class="option" data-answer="1100">1,100 שקלים</div>
-                        <div class="option" data-answer="1200" data-correct="true">1,200 שקלים</div>
-                        <div class="option" data-answer="1400">1,400 שקלים</div>
+                        <div class="option" data-answer="1000">1,000 shekels</div>
+                        <div class="option" data-answer="1100">1,100 shekels</div>
+                        <div class="option" data-answer="1200" data-correct="true">1,200 shekels</div>
+                        <div class="option" data-answer="1400">1,400 shekels</div>
                     </div>
                     <div class="feedback" id="feedback-b2"></div>
                 </div>
 
                 <!-- Question C - Context -->
                 <div class="question-context">
-                    <strong style="color: #a78bfa;">ג.</strong> למשפחת כהן יש גינה ששטחה 17 מ"ר. משפחת כהן בחרה בגנן שהצעת המחיר שלו הייתה נמוכה יותר.
+                    <strong style="color: #a78bfa;">C.</strong> The Cohen family has a garden with an area of 17 sq. m. The Cohen family chose the gardener whose price proposal was lower.
                 </div>
 
                 <!-- Question C1 -->
                 <div class="question-card" id="q-c1" data-question="c1">
-                    <div class="question-header">(1) במי משני הגננים בחרה משפחת כהן?</div>
+                    <div class="question-header">(1) Which of the two gardeners did the Cohen family choose?</div>
                     <div class="options">
-                        <div class="option" data-answer="oren">אורן</div>
-                        <div class="option" data-answer="tomer" data-correct="true">תומר</div>
-                        <div class="option" data-answer="same">אותו מחיר לשניהם</div>
-                        <div class="option" data-answer="unknown">אי אפשר לדעת</div>
+                        <div class="option" data-answer="oren">Oren</div>
+                        <div class="option" data-answer="tomer" data-correct="true">Tomer</div>
+                        <div class="option" data-answer="same">Same price for both</div>
+                        <div class="option" data-answer="unknown">Cannot be determined</div>
                     </div>
                     <div class="feedback" id="feedback-c1"></div>
                 </div>
 
                 <!-- Question C2 -->
                 <div class="question-card" id="q-c2" data-question="c2">
-                    <div class="question-header">(2) מצאו בכמה שקלים הייתה גבוהה הצעת המחיר של הגנן האחר מן המחיר ששילמה משפחת כהן.</div>
+                    <div class="question-header">(2) Find by how many shekels the other gardener's price proposal was higher than the price the Cohen family paid.</div>
                     <div class="options">
-                        <div class="option" data-answer="124">124 שקלים</div>
-                        <div class="option" data-answer="200">200 שקלים</div>
-                        <div class="option" data-answer="224" data-correct="true">224 שקלים</div>
-                        <div class="option" data-answer="324">324 שקלים</div>
+                        <div class="option" data-answer="124">124 shekels</div>
+                        <div class="option" data-answer="200">200 shekels</div>
+                        <div class="option" data-answer="224" data-correct="true">224 shekels</div>
+                        <div class="option" data-answer="324">324 shekels</div>
                     </div>
                     <div class="feedback" id="feedback-c2"></div>
                 </div>
@@ -571,9 +571,9 @@
         </div>
 
         <div class="score-container" id="score-container">
-            <div style="color: var(--green); font-size: 1.3em;">כל הכבוד! סיימת את כל השאלות</div>
+            <div style="color: var(--green); font-size: 1.3em;">Well done! You completed all the questions</div>
             <div class="score" id="final-score">0/5</div>
-            <button class="reset-btn" onclick="resetQuiz()">התחל מחדש</button>
+            <button class="reset-btn" onclick="resetQuiz()">Start Over</button>
         </div>
     </div>
 
@@ -588,34 +588,34 @@
         // Short explanations for each option
         const optionFeedback = {
             a: {
-                '1': { correct: true, text: "נכון! גרף I מתחיל ב-700 ועולה לאט" },
-                '2': { correct: false, text: "לא. גרף II מתחיל מ-0 - זה תומר" },
-                '3': { correct: false, text: "לא. כל גרף מתאר גנן אחד" },
-                '4': { correct: false, text: "לא. גרף I מתאר את אורן" }
+                '1': { correct: true, text: "Correct! Graph I starts at 700 and rises slowly" },
+                '2': { correct: false, text: "No. Graph II starts from 0 - that's Tomer" },
+                '3': { correct: false, text: "No. Each graph describes one gardener" },
+                '4': { correct: false, text: "No. Graph I describes Oren" }
             },
             b1: {
-                '20': { correct: false, text: "לא. ב-20 מ\"ר הגרפים לא נחתכים" },
-                '25': { correct: true, text: "נכון! נקודת החיתוך: 700+20x=48x → x=25" },
-                '30': { correct: false, text: "לא. ב-30 מ\"ר המחירים שונים" },
-                '35': { correct: false, text: "לא. ב-35 מ\"ר כבר עברנו את החיתוך" }
+                '20': { correct: false, text: "No. At 20 sq. m the graphs don't intersect" },
+                '25': { correct: true, text: "Correct! Intersection point: 700+20x=48x → x=25" },
+                '30': { correct: false, text: "No. At 30 sq. m the prices differ" },
+                '35': { correct: false, text: "No. At 35 sq. m we've already passed the intersection" }
             },
             b2: {
-                '1000': { correct: false, text: "לא. חשב: 48×25 או 700+20×25" },
-                '1100': { correct: false, text: "לא. המחיר גבוה יותר" },
-                '1200': { correct: true, text: "נכון! 48×25 = 1,200 שקלים" },
-                '1400': { correct: false, text: "לא. זה יותר מדי" }
+                '1000': { correct: false, text: "No. Calculate: 48×25 or 700+20×25" },
+                '1100': { correct: false, text: "No. The price is higher" },
+                '1200': { correct: true, text: "Correct! 48×25 = 1,200 shekels" },
+                '1400': { correct: false, text: "No. That's too much" }
             },
             c1: {
-                'oren': { correct: false, text: "לא. אורן גובה 1,040 ש\"ח - יקר יותר!" },
-                'tomer': { correct: true, text: "נכון! תומר גובה רק 816 ש\"ח" },
-                'same': { correct: false, text: "לא. 816 ≠ 1,040" },
-                'unknown': { correct: false, text: "לא. אפשר לחשב מהגרף" }
+                'oren': { correct: false, text: "No. Oren charges 1,040 NIS - more expensive!" },
+                'tomer': { correct: true, text: "Correct! Tomer charges only 816 NIS" },
+                'same': { correct: false, text: "No. 816 ≠ 1,040" },
+                'unknown': { correct: false, text: "No. It can be calculated from the graph" }
             },
             c2: {
-                '124': { correct: false, text: "לא. חשב: 1,040 - 816" },
-                '200': { correct: false, text: "לא. ההפרש גדול יותר" },
-                '224': { correct: true, text: "נכון! 1,040 - 816 = 224" },
-                '324': { correct: false, text: "לא. זה יותר מדי" }
+                '124': { correct: false, text: "No. Calculate: 1,040 - 816" },
+                '200': { correct: false, text: "No. The difference is larger" },
+                '224': { correct: true, text: "Correct! 1,040 - 816 = 224" },
+                '324': { correct: false, text: "No. That's too much" }
             }
         };
 
@@ -662,7 +662,7 @@
                     // Wrong answer - allow retry
                     this.classList.add('wrong-answer');
                     card.classList.add('incorrect');
-                    feedback.textContent = feedbackData.text + " נסה שוב!";
+                    feedback.textContent = feedbackData.text + " Try again!";
                     feedback.classList.remove('correct');
                     feedback.classList.add('incorrect', 'show');
 

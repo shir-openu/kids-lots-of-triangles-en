@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>עמוד 5: פונקציות - משאית מחיפה</title>
+    <title>Page 5: Functions - Truck from Haifa</title>
     <style>
         * {
             margin: 0;
@@ -312,15 +312,15 @@
 </head>
 <body>
     <div class="container">
-        <h1>פונקציות - משאית מחיפה</h1>
+        <h1>Functions - Truck from Haifa</h1>
 
         <div class="problem-description">
-            <p>משאית יצאה מחיפה. במהלך הנסיעה עצרה פעמיים.</p>
-            <p>הגרף שלפניכם מתאר את המרחק מחיפה בהתאם לזמן שעבר מתחילת הנסיעה.</p>
+            <p>A truck left Haifa. During the trip it stopped twice.</p>
+            <p>The graph below describes the distance from Haifa as a function of time elapsed since the start of the trip.</p>
         </div>
 
         <div class="graph-container">
-            <h2 class="graph-title">גרף המרחק מחיפה כפונקציה של הזמן</h2>
+            <h2 class="graph-title">Distance from Haifa as a Function of Time</h2>
             <svg id="graph" viewBox="0 0 700 450" width="100%" height="400">
                 <defs>
                     <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
@@ -360,7 +360,7 @@
                 <text x="480" y="380" class="axis-label" text-anchor="middle">5</text>
                 <text x="560" y="380" class="axis-label" text-anchor="middle">6</text>
                 <text x="640" y="380" class="axis-label" text-anchor="middle">7</text>
-                <text x="360" y="420" class="axis-label" text-anchor="middle">זמן (שעות)</text>
+                <text x="360" y="420" class="axis-label" text-anchor="middle">Time (hours)</text>
 
                 <!-- Y-axis labels -->
                 <text x="65" y="355" class="axis-label" text-anchor="end">0</text>
@@ -368,7 +368,7 @@
                 <text x="65" y="255" class="axis-label" text-anchor="end">100</text>
                 <text x="65" y="205" class="axis-label" text-anchor="end">150</text>
                 <text x="65" y="155" class="axis-label" text-anchor="end">200</text>
-                <text x="35" y="200" class="axis-label" text-anchor="middle" transform="rotate(-90, 35, 200)">מרחק מחיפה (ק"מ)</text>
+                <text x="35" y="200" class="axis-label" text-anchor="middle" transform="rotate(-90, 35, 200)">Distance from Haifa (km)</text>
 
                 <!-- Highlight elements -->
                 <polyline id="highlight-stop1" class="highlight-segment" points="240,250 320,250" />
@@ -406,30 +406,30 @@
             <div class="legend">
                 <div class="legend-item">
                     <div class="legend-color" style="background: #e74c3c;"></div>
-                    <span>מסלול המשאית</span>
+                    <span>Truck route</span>
                 </div>
                 <div class="legend-item">
                     <div class="legend-color" style="background: #f1c40f;"></div>
-                    <span>הדגשה</span>
+                    <span>Highlight</span>
                 </div>
             </div>
         </div>
 
         <div class="quiz-section">
-            <!-- שאלה א - השלמת הטבלה -->
+            <!-- Question A - Completing the table -->
             <div class="question-card" id="q1" data-highlight="table">
-                <div class="question-text">א. השלימו את הטבלה על סמך הגרף הנתון.</div>
+                <div class="question-text">A. Complete the table based on the given graph.</div>
                 <div class="table-display">
                     <table>
                         <tr>
-                            <th>זמן (שעות) x</th>
-                            <th>מרחק מחיפה (ק"מ) y</th>
+                            <th>Time (hours) x</th>
+                            <th>Distance from Haifa (km) y</th>
                         </tr>
                         <tr><td>1</td><td>?</td></tr>
                         <tr><td>3.5</td><td>?</td></tr>
                         <tr><td>7</td><td>?</td></tr>
-                        <tr><td>משלכם</td><td>?</td></tr>
-                        <tr><td>משלכם</td><td>?</td></tr>
+                        <tr><td>your value</td><td>?</td></tr>
+                        <tr><td>your value</td><td>?</td></tr>
                     </table>
                 </div>
                 <div class="options">
@@ -441,79 +441,79 @@
                 <div class="feedback"></div>
             </div>
 
-            <!-- שאלה ב - פרקי זמן שהמשאית לא נסעה -->
+            <!-- Question B - Time periods when the truck was not moving -->
             <div class="question-card" id="q2" data-highlight="stops">
-                <div class="question-text">ב. באילו פרקי זמן לא נסעה המשאית? הסבירו.</div>
+                <div class="question-text">B. During which time periods was the truck not moving? Explain.</div>
                 <div class="options">
-                    <div class="option" data-answer="wrong" onclick="selectOption(this, 'q2')">שעות 1-2 ו-4-5 (כי הגרף עולה לאט)</div>
-                    <div class="option" data-answer="correct" onclick="selectOption(this, 'q2')">שעות 2-3 ו-5-6 (כי הגרף אופקי - המרחק לא משתנה)</div>
-                    <div class="option" data-answer="wrong" onclick="selectOption(this, 'q2')">שעות 6-7 (כי הגרף יורד)</div>
-                    <div class="option" data-answer="wrong" onclick="selectOption(this, 'q2')">שעות 0-1 ו-3-4 (כי המשאית האטה)</div>
+                    <div class="option" data-answer="wrong" onclick="selectOption(this, 'q2')">Hours 1-2 and 4-5 (because the graph rises slowly)</div>
+                    <div class="option" data-answer="correct" onclick="selectOption(this, 'q2')">Hours 2-3 and 5-6 (because the graph is horizontal - distance does not change)</div>
+                    <div class="option" data-answer="wrong" onclick="selectOption(this, 'q2')">Hours 6-7 (because the graph descends)</div>
+                    <div class="option" data-answer="wrong" onclick="selectOption(this, 'q2')">Hours 0-1 and 3-4 (because the truck slowed down)</div>
                 </div>
                 <div class="feedback"></div>
             </div>
 
-            <!-- שאלה ג - האם חזרה לחיפה -->
+            <!-- Question C - Did the truck return to Haifa -->
             <div class="question-card" id="q3" data-highlight="return">
-                <div class="question-text">ג. האם חזרה המשאית לחיפה? הסבירו.</div>
+                <div class="question-text">C. Did the truck return to Haifa? Explain.</div>
                 <div class="options">
-                    <div class="option" data-answer="wrong" onclick="selectOption(this, 'q3')">כן, כי הגרף יורד בסוף</div>
-                    <div class="option" data-answer="correct" onclick="selectOption(this, 'q3')">לא, כי בסוף (x=7) המרחק הוא 100 ק"מ ולא 0</div>
-                    <div class="option" data-answer="wrong" onclick="selectOption(this, 'q3')">כן, כי היא עצרה פעמיים</div>
-                    <div class="option" data-answer="wrong" onclick="selectOption(this, 'q3')">לא ניתן לדעת מהגרף</div>
+                    <div class="option" data-answer="wrong" onclick="selectOption(this, 'q3')">Yes, because the graph descends at the end</div>
+                    <div class="option" data-answer="correct" onclick="selectOption(this, 'q3')">No, because at the end (x=7) the distance is 100 km not 0</div>
+                    <div class="option" data-answer="wrong" onclick="selectOption(this, 'q3')">Yes, because it stopped twice</div>
+                    <div class="option" data-answer="wrong" onclick="selectOption(this, 'q3')">Cannot be determined from the graph</div>
                 </div>
                 <div class="feedback"></div>
             </div>
 
-            <!-- שאלה ד - מרחק מרבי -->
+            <!-- Question D - Maximum distance -->
             <div class="question-card" id="q4" data-highlight="max">
-                <div class="question-text">ד. מה היה המרחק המרבי שלה מחיפה במהלך הנסיעה?</div>
+                <div class="question-text">D. What was its maximum distance from Haifa during the trip?</div>
                 <div class="options">
-                    <div class="option" data-answer="wrong" onclick="selectOption(this, 'q4')">100 ק"מ</div>
-                    <div class="option" data-answer="wrong" onclick="selectOption(this, 'q4')">150 ק"מ</div>
-                    <div class="option" data-answer="correct" onclick="selectOption(this, 'q4')">200 ק"מ</div>
-                    <div class="option" data-answer="wrong" onclick="selectOption(this, 'q4')">250 ק"מ</div>
+                    <div class="option" data-answer="wrong" onclick="selectOption(this, 'q4')">100 km</div>
+                    <div class="option" data-answer="wrong" onclick="selectOption(this, 'q4')">150 km</div>
+                    <div class="option" data-answer="correct" onclick="selectOption(this, 'q4')">200 km</div>
+                    <div class="option" data-answer="wrong" onclick="selectOption(this, 'q4')">250 km</div>
                 </div>
                 <div class="feedback"></div>
             </div>
 
-            <!-- שאלה ה - שני מרחקים שונים באותו זמן -->
+            <!-- Question E - Two different distances at the same time -->
             <div class="question-card" id="q5" data-highlight="all">
-                <div class="question-text">ה. האם ייתכן שבנקודת זמן מסוימת במהלך הנסיעה הייתה המשאית בשני מרחקים שונים מחיפה?</div>
+                <div class="question-text">E. Is it possible that at a certain point in time during the trip the truck was at two different distances from Haifa?</div>
                 <div class="options">
-                    <div class="option" data-answer="correct" onclick="selectOption(this, 'q5')">לא, כי בכל רגע נתון המשאית יכולה להיות רק במקום אחד</div>
-                    <div class="option" data-answer="wrong" onclick="selectOption(this, 'q5')">כן, כשהיא עצרה</div>
-                    <div class="option" data-answer="wrong" onclick="selectOption(this, 'q5')">כן, כשהיא חזרה לכיוון חיפה</div>
-                    <div class="option" data-answer="wrong" onclick="selectOption(this, 'q5')">תלוי במהירות הנסיעה</div>
+                    <div class="option" data-answer="correct" onclick="selectOption(this, 'q5')">No, because at any given moment the truck can only be in one place</div>
+                    <div class="option" data-answer="wrong" onclick="selectOption(this, 'q5')">Yes, when it stopped</div>
+                    <div class="option" data-answer="wrong" onclick="selectOption(this, 'q5')">Yes, when it returned toward Haifa</div>
+                    <div class="option" data-answer="wrong" onclick="selectOption(this, 'q5')">Depends on the travel speed</div>
                 </div>
                 <div class="feedback"></div>
             </div>
 
-            <!-- שאלה ו - האם לכל x מתאים y יחיד -->
+            <!-- Question F - Does each x have a unique y -->
             <div class="question-card" id="q6" data-highlight="all">
-                <div class="question-text">ו. האם לפי הגרף הנתון לכל ערך של המשתנה זמן (x) מתאים ערך יחיד של המשתנה מרחק מחיפה (y)? הסבירו.</div>
+                <div class="question-text">F. According to the given graph, does each value of the time variable (x) correspond to a unique value of the distance from Haifa variable (y)? Explain.</div>
                 <div class="options">
-                    <div class="option" data-answer="correct" onclick="selectOption(this, 'q6')">כן, לכל ערך x יש ערך y יחיד - זו הגדרת פונקציה</div>
-                    <div class="option" data-answer="wrong" onclick="selectOption(this, 'q6')">לא, כי לפעמים הגרף אופקי</div>
-                    <div class="option" data-answer="wrong" onclick="selectOption(this, 'q6')">לא, כי הגרף גם עולה וגם יורד</div>
-                    <div class="option" data-answer="wrong" onclick="selectOption(this, 'q6')">רק בחלק מהזמנים</div>
+                    <div class="option" data-answer="correct" onclick="selectOption(this, 'q6')">Yes, each x value has a unique y value - this is the definition of a function</div>
+                    <div class="option" data-answer="wrong" onclick="selectOption(this, 'q6')">No, because sometimes the graph is horizontal</div>
+                    <div class="option" data-answer="wrong" onclick="selectOption(this, 'q6')">No, because the graph both rises and falls</div>
+                    <div class="option" data-answer="wrong" onclick="selectOption(this, 'q6')">Only at some times</div>
                 </div>
                 <div class="feedback"></div>
             </div>
         </div>
 
         <div class="score-display" id="scoreDisplay">
-            ענית על <span id="correctCount">0</span> מתוך <span id="totalCount">6</span> שאלות נכון
+            You answered <span id="correctCount">0</span> out of <span id="totalCount">6</span> questions correctly
         </div>
 
-        <button class="reset-btn" onclick="resetQuiz()">התחל מחדש</button>
+        <button class="reset-btn" onclick="resetQuiz()">Start Over</button>
 
         <div class="function-definition">
-            <h3>הגדרה: מהי פונקציה?</h3>
-            <p>התאמה שבה <strong>לכל ערך של משתנה מסוים מתאים ערך אחד ויחיד</strong> של משתנה אחר נקראת <strong>פונקציה</strong>.</p>
+            <h3>Definition: What is a Function?</h3>
+            <p>A correspondence in which <strong>each value of a certain variable corresponds to one and only one</strong> value of another variable is called a <strong>function</strong>.</p>
             <br>
-            <p>לדוגמה, במשימה זו לכל ערך של זמן (x) מתאים ערך יחיד של מרחק (y).</p>
-            <p>כמו כן, שימו לב שניתן להציג את הפונקציה בצורה מילולית, בטבלה ובדרך גרפית.</p>
+            <p>For example, in this task, each time value (x) corresponds to a unique distance value (y).</p>
+            <p>Also note that a function can be represented verbally, in a table, and graphically.</p>
         </div>
     </div>
 
@@ -523,28 +523,28 @@
 
         const feedbackMessages = {
             q1: {
-                correct: "נכון! מהגרף: בזמן x=1 המרחק 50 ק\"מ, בזמן x=3.5 המרחק 150 ק\"מ, בזמן x=7 המרחק 100 ק\"מ.",
-                incorrect: "לא נכון. קראו בזהירות מהגרף: x=1 נמצא על הקו מ-(0,0) ל-(2,100) ולכן y=50. x=3.5 נמצא על הקו מ-(3,100) ל-(5,200) ולכן y=150. x=7 הוא סוף הגרף ולכן y=100."
+                correct: "Correct! From the graph: at time x=1 the distance is 50 km, at time x=3.5 the distance is 150 km, at time x=7 the distance is 100 km.",
+                incorrect: "Incorrect. Read carefully from the graph: x=1 is on the line from (0,0) to (2,100) so y=50. x=3.5 is on the line from (3,100) to (5,200) so y=150. x=7 is the end of the graph so y=100."
             },
             q2: {
-                correct: "נכון! הגרף אופקי בשעות 2-3 ו-5-6. כאשר הגרף אופקי, המרחק לא משתנה - כלומר המשאית לא נעה.",
-                incorrect: "לא נכון. עצירה = קטע אופקי בגרף (המרחק לא משתנה). הקטעים האופקיים הם בשעות 2-3 ו-5-6."
+                correct: "Correct! The graph is horizontal at hours 2-3 and 5-6. When the graph is horizontal, the distance does not change - meaning the truck is not moving.",
+                incorrect: "Incorrect. A stop = horizontal segment in graph (distance does not change). The horizontal segments are at hours 2-3 and 5-6."
             },
             q3: {
-                correct: "נכון! בסוף הנסיעה (x=7) המרחק מחיפה הוא 100 ק\"מ. כדי לחזור לחיפה, הגרף צריך להגיע ל-y=0.",
-                incorrect: "לא נכון. חזרה לחיפה = הגרף מגיע ל-y=0. בסוף הגרף (x=7) הערך הוא y=100, כלומר המשאית נשארה במרחק 100 ק\"מ מחיפה."
+                correct: "Correct! At the end of the trip (x=7) the distance from Haifa is 100 km. To return to Haifa, the graph would need to reach y=0.",
+                incorrect: "Incorrect. Returning to Haifa = graph reaches y=0. At the end of the graph (x=7) the value is y=100, meaning the truck stayed 100 km from Haifa."
             },
             q4: {
-                correct: "נכון! הנקודה הגבוהה ביותר בגרף היא y=200 ק\"מ, והיא מושגת בין שעות 5-6.",
-                incorrect: "לא נכון. המרחק המרבי הוא הנקודה הגבוהה ביותר בגרף. הפסגה היא ב-y=200 ק\"מ."
+                correct: "Correct! The highest point on the graph is y=200 km, reached between hours 5-6.",
+                incorrect: "Incorrect. The maximum distance is the highest point on the graph. The peak is at y=200 km."
             },
             q5: {
-                correct: "נכון! בכל רגע נתון המשאית יכולה להיות רק במקום אחד. לכן לכל ערך של זמן יש ערך יחיד של מרחק.",
-                incorrect: "לא נכון. פיזית, משאית לא יכולה להיות בשני מקומות בו-זמנית. לכל רגע (x) יש מיקום יחיד (y)."
+                correct: "Correct! At any given moment the truck can only be in one place. Therefore each time value has a unique distance value.",
+                incorrect: "Incorrect. Physically, a truck cannot be in two places simultaneously. Each moment (x) has a unique location (y)."
             },
             q6: {
-                correct: "נכון! לכל ערך של x מתאים ערך y יחיד - וזו בדיוק ההגדרה של פונקציה. הגרף עובר את \"מבחן הקו האנכי\".",
-                incorrect: "לא נכון. הקשר הוא פונקציה כי לכל זמן (x) מתאים מרחק יחיד (y). קטעים אופקיים או ירידות לא משנים את העובדה שלכל x יש y יחיד."
+                correct: "Correct! Each x value corresponds to a unique y value - and that is exactly the definition of a function. The graph passes the vertical line test.",
+                incorrect: "Incorrect. The relation is a function because each time (x) corresponds to a unique distance (y). Horizontal segments or descents do not change the fact that each x has a unique y."
             }
         };
 

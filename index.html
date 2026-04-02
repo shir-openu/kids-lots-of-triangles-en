@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>מרובעים עם אלכסונים - הרבה משולשים - </title>
+<title>Quadrilaterals with Diagonals - Lots of Triangles</title>
 <style>
   :root {
     --bg: #0b1220;
@@ -89,7 +89,7 @@
     font-family: 'Segoe UI', sans-serif;
   }
 
-  /* Animated highlight - איטי ונעים */
+  /* Animated highlight - slow and smooth */
   @keyframes pulse {
     0%, 100% { opacity: 1; }
     50% { opacity: 0.3; }
@@ -149,7 +149,7 @@
     animation: pulse 1.2s ease-in-out 5;
   }
 
-  /* קשתות זווית */
+  /* Angle arcs */
   .angle-arc {
     fill: rgba(253, 224, 71, 0.3);
     stroke: var(--yellow);
@@ -477,7 +477,7 @@
     height: 34px;
     border-radius: 50%;
     line-height: 34px;
-    margin-left: 12px;
+    margin-right: 12px;
     font-size: 20px;
   }
 
@@ -568,48 +568,48 @@
 <body>
 
 <div class="container">
-  <div class="greeting">שלום !</div>
+  <div class="greeting">Hello!</div>
 
   <div class="main-card">
 
     <!-- ==================== -->
-    <!-- עמוד 1: שאלה סעיף א -->
+    <!-- Page 1: Question Part A -->
     <!-- ==================== -->
     <div class="page active" id="page1">
-      <div class="section-header">תרגיל: שני מרובעים עם אלכסונים</div>
+      <div class="section-header">Exercise: Two Quadrilaterals with Diagonals</div>
 
       <!--
-        הציור: שני מרובעים חופפים
-        מרובע ABCD: A(100,50), B(350,50), C(450,200), D(200,200)
-        מרובע EFGH: E(100,200), F(200,350), G(450,350), H(450,200)
-        נקודת חיתוך: O(275,200) - מרכז
+        Drawing: two overlapping quadrilaterals
+        Quadrilateral ABCD: A(100,50), B(350,50), C(450,200), D(200,200)
+        Quadrilateral EFGH: E(100,200), F(200,350), G(450,350), H(450,200)
+        Intersection point: O(275,200) - center
 
-        אלכסונים של ABCD: AC ו-BD נחתכים ב-O
-        אלכסונים של EFGH: EG ו-FH נחתכים ב-O
+        Diagonals of ABCD: AC and BD intersect at O
+        Diagonals of EFGH: EG and FH intersect at P
       -->
       <div class="svg-container">
         <svg class="stage" width="550" height="420" viewBox="0 0 550 420">
-          <!-- מרובע ABCD -->
+          <!-- Quadrilateral ABCD -->
           <line id="line-AB" class="shape-line" x1="100" y1="60" x2="350" y2="60"/>
           <line id="line-BC" class="shape-line" x1="350" y1="60" x2="450" y2="200"/>
           <line id="line-CD" class="shape-line" x1="450" y1="200" x2="200" y2="200"/>
           <line id="line-DA" class="shape-line" x1="200" y1="200" x2="100" y2="60"/>
 
-          <!-- מרובע EFGH -->
+          <!-- Quadrilateral EFGH -->
           <line id="line-EF" class="shape-line" x1="100" y1="200" x2="200" y2="340"/>
           <line id="line-FG" class="shape-line" x1="200" y1="340" x2="450" y2="340"/>
           <line id="line-GH" class="shape-line" x1="450" y1="340" x2="450" y2="200"/>
           <line id="line-HE" class="shape-line" x1="450" y1="200" x2="100" y2="200"/>
 
-          <!-- אלכסונים ABCD -->
+          <!-- Diagonals ABCD -->
           <line id="line-AC" class="shape-line" x1="100" y1="60" x2="450" y2="200"/>
           <line id="line-BD" class="shape-line" x1="350" y1="60" x2="200" y2="200"/>
 
-          <!-- אלכסונים EFGH -->
+          <!-- Diagonals EFGH -->
           <line id="line-EG" class="shape-line" x1="100" y1="200" x2="450" y2="340"/>
           <line id="line-FH" class="shape-line" x1="200" y1="340" x2="450" y2="200"/>
 
-          <!-- תוויות -->
+          <!-- Labels -->
           <text class="vertex-label" x="85" y="50">A</text>
           <text class="vertex-label" x="355" y="50">B</text>
           <text class="vertex-label" x="455" y="205">C=H</text>
@@ -618,7 +618,7 @@
           <text class="vertex-label" x="180" y="365">F</text>
           <text class="vertex-label" x="455" y="355">G</text>
 
-          <!-- נקודות חיתוך -->
+          <!-- Intersection points -->
           <circle cx="275" cy="130" r="5" fill="var(--orange)"/>
           <text class="center-label" x="280" y="120">O</text>
 
@@ -628,53 +628,53 @@
       </div>
 
       <div class="given-box">
-        <div><strong>נתון:</strong></div>
-        <div class="given-item" id="given1" onclick="flashGiven(1)">ABCD מרובע, האלכסונים AC ו-BD נחתכים ב-O</div><br>
-        <div class="given-item" id="given2" onclick="flashGiven(2)">EFGH מרובע, האלכסונים EG ו-FH נחתכים ב-P</div><br>
-        <div class="given-item" id="given3" onclick="flashGiven(3)"><span class="math-expr">AO = CO</span> (O חוצה את AC)</div><br>
-        <div class="given-item" id="given4" onclick="flashGiven(4)"><span class="math-expr">BO = DO</span> (O חוצה את BD)</div><br>
-        <div class="given-item" id="given5" onclick="flashGiven(5)"><span class="math-expr">EP = GP</span> (P חוצה את EG)</div><br>
-        <div class="given-item" id="given6" onclick="flashGiven(6)"><span class="math-expr">FP = HP</span> (P חוצה את FH)</div>
+        <div><strong>Given:</strong></div>
+        <div class="given-item" id="given1" onclick="flashGiven(1)">ABCD is a quadrilateral, diagonals AC and BD intersect at O</div><br>
+        <div class="given-item" id="given2" onclick="flashGiven(2)">EFGH is a quadrilateral, diagonals EG and FH intersect at P</div><br>
+        <div class="given-item" id="given3" onclick="flashGiven(3)"><span class="math-expr">AO = CO</span> (O bisects AC)</div><br>
+        <div class="given-item" id="given4" onclick="flashGiven(4)"><span class="math-expr">BO = DO</span> (O bisects BD)</div><br>
+        <div class="given-item" id="given5" onclick="flashGiven(5)"><span class="math-expr">EP = GP</span> (P bisects EG)</div><br>
+        <div class="given-item" id="given6" onclick="flashGiven(6)"><span class="math-expr">FP = HP</span> (P bisects FH)</div>
       </div>
 
       <div style="text-align: center; margin: 15px 0; font-size: 22px; color: var(--teal);">
-        בכל מרובע יש 4 משולשים שנוצרים מהאלכסונים. בואי נמצא משולשים חופפים!
+        Each quadrilateral has 4 triangles formed by the diagonals. Let's find congruent triangles!
       </div>
 
-      <div class="section-header">סעיף א'</div>
-      <div class="question-box">הוכיחי ש:</div>
+      <div class="section-header">Part A</div>
+      <div class="question-box">Prove that:</div>
       <div class="prove-statement">△AOB ≅ △COD</div>
-      <div class="question-box">לפי איזה משפט חפיפה?</div>
+      <div class="question-box">By which congruence theorem?</div>
 
       <div class="answers" id="answers1">
         <button class="answer-btn" onclick="checkAnswer(1, this, false)">
-          צ.צ.צ<br>(צלע-צלע-צלע)
+          SSS<br>(Side-Side-Side)
         </button>
         <button class="answer-btn" onclick="checkAnswer(1, this, true)">
-          צ.ז.צ<br>(צלע-זווית-צלע)
+          SAS<br>(Side-Angle-Side)
         </button>
         <button class="answer-btn" onclick="checkAnswer(1, this, false)">
-          ז.צ.ז<br>(זווית-צלע-זווית)
+          ASA<br>(Angle-Side-Angle)
         </button>
         <button class="answer-btn" onclick="checkAnswer(1, this, false)">
-          צ.צ.ז<br>(צלע-צלע-זווית)
+          SSA<br>(Side-Side-Angle)
         </button>
       </div>
 
       <div class="feedback" id="feedback1">
-        חשבי: AO=CO (נתון), BO=DO (נתון), והזווית ביניהן ∠AOB=∠COD (זוויות קודקודיות)
+        Think: AO=CO (given), BO=DO (given), and the angle between them ∠AOB=∠COD (vertical angles)
       </div>
 
-      <div class="success-msg" id="success1">נכון מאוד!</div>
-      <button class="continue-btn" id="continue1" onclick="showPage('explain1')">להמשיך להסבר</button>
+      <div class="success-msg" id="success1">Exactly right!</div>
+      <button class="continue-btn" id="continue1" onclick="showPage('explain1')">Continue to Explanation</button>
     </div>
 
     <!-- ==================== -->
-    <!-- עמוד 2: הסבר סעיף א -->
+    <!-- Page 2: Explanation Part A -->
     <!-- ==================== -->
     <div class="page" id="explain1">
-      <div class="explanation-title">הוכחת סעיף א'</div>
-      <div class="explanation-subtitle">△AOB ≅ △COD לפי צ.ז.צ</div>
+      <div class="explanation-title">Proof of Part A</div>
+      <div class="explanation-subtitle">△AOB ≅ △COD by SAS</div>
 
       <div class="svg-container">
         <svg class="stage" width="550" height="420" viewBox="0 0 550 420">
@@ -687,13 +687,13 @@
           <line id="exp1-GH" class="shape-line" x1="450" y1="340" x2="450" y2="200" style="opacity:0.3"/>
           <line id="exp1-HE" class="shape-line" x1="450" y1="200" x2="100" y2="200" style="opacity:0.3"/>
 
-          <!-- אלכסונים -->
+          <!-- Diagonals -->
           <line id="exp1-AO" class="shape-line" x1="100" y1="60" x2="275" y2="130"/>
           <line id="exp1-OC" class="shape-line" x1="275" y1="130" x2="450" y2="200"/>
           <line id="exp1-BO" class="shape-line" x1="350" y1="60" x2="275" y2="130"/>
           <line id="exp1-OD" class="shape-line" x1="275" y1="130" x2="200" y2="200"/>
 
-          <!-- קשת זווית קודקודית -->
+          <!-- Vertical angle arc -->
           <path id="exp1-angle-AOB" class="angle-arc" d="M 275 130 L 255 115 A 25 25 0 0 1 290 110 Z"/>
           <path id="exp1-angle-COD" class="angle-arc" d="M 275 130 L 295 145 A 25 25 0 0 1 260 150 Z"/>
 
@@ -707,43 +707,43 @@
       </div>
 
       <div class="reason-card" id="reason1-1">
-        <span class="reason-number" style="background: var(--yellow);">צ</span>
+        <span class="reason-number" style="background: var(--yellow);">S</span>
         <span class="reason-text">AO = CO</span>
-        <div class="reason-explanation">(נתון - O חוצה את AC)</div>
+        <div class="reason-explanation">(Given - O bisects AC)</div>
       </div>
 
       <div class="reason-card" id="reason1-2">
-        <span class="reason-number" style="background: var(--teal);">ז</span>
+        <span class="reason-number" style="background: var(--teal);">A</span>
         <span class="reason-text">∠AOB = ∠COD</span>
-        <div class="reason-explanation">(זוויות קודקודיות)</div>
+        <div class="reason-explanation">(Vertical angles)</div>
       </div>
 
       <div class="reason-card" id="reason1-3">
-        <span class="reason-number" style="background: var(--lime);">צ</span>
+        <span class="reason-number" style="background: var(--lime);">S</span>
         <span class="reason-text">BO = DO</span>
-        <div class="reason-explanation">(נתון - O חוצה את BD)</div>
+        <div class="reason-explanation">(Given - O bisects BD)</div>
       </div>
 
       <div class="conclusion-card" id="conclusion1">
-        <div style="color: var(--green);">לכן:</div>
+        <div style="color: var(--green);">Therefore:</div>
         <div style="font-size: 32px; margin-top: 10px; direction: ltr;">△AOB ≅ △COD</div>
-        <div style="font-size: 22px; margin-top: 10px;">(לפי משפט צ.ז.צ)</div>
+        <div style="font-size: 22px; margin-top: 10px;">(By SAS congruence theorem)</div>
       </div>
 
       <div class="conclusion-card" id="conclusion1b">
-        <div style="color: var(--teal);">מה ניתן להסיק?</div>
+        <div style="color: var(--teal);">What can we conclude?</div>
         <div style="font-size: 26px; margin-top: 10px; direction: ltr;">AB = CD</div>
-        <div style="font-size: 20px; margin-top: 8px;">(צלעות מתאימות במשולשים חופפים)</div>
+        <div style="font-size: 20px; margin-top: 8px;">(Corresponding sides of congruent triangles)</div>
       </div>
 
-      <button class="next-btn" id="next1" onclick="showPage('page2')">המשך לסעיף ב'</button>
+      <button class="next-btn" id="next1" onclick="showPage('page2')">Continue to Part B</button>
     </div>
 
     <!-- ==================== -->
-    <!-- עמוד 3: שאלה סעיף ב -->
+    <!-- Page 3: Question Part B -->
     <!-- ==================== -->
     <div class="page" id="page2">
-      <div class="section-header">סעיף ב' - זוג משולשים נוסף במרובע ABCD</div>
+      <div class="section-header">Part B - Another Pair of Triangles in Quadrilateral ABCD</div>
 
       <div class="svg-container">
         <svg class="stage" width="550" height="420" viewBox="0 0 550 420">
@@ -768,43 +768,43 @@
       </div>
 
       <div class="proven-box">
-        <div><strong>כבר הוכחנו:</strong></div>
+        <div><strong>Already proven:</strong></div>
         <div class="proven-text">△AOB ≅ △COD</div>
       </div>
 
-      <div class="question-box">הוכיחי ש:</div>
+      <div class="question-box">Prove that:</div>
       <div class="prove-statement">△BOC ≅ △DOA</div>
-      <div class="question-box">לפי איזה משפט חפיפה?</div>
+      <div class="question-box">By which congruence theorem?</div>
 
       <div class="answers" id="answers2">
         <button class="answer-btn" onclick="checkAnswer(2, this, false)">
-          צ.צ.צ<br>(צלע-צלע-צלע)
+          SSS<br>(Side-Side-Side)
         </button>
         <button class="answer-btn" onclick="checkAnswer(2, this, true)">
-          צ.ז.צ<br>(צלע-זווית-צלע)
+          SAS<br>(Side-Angle-Side)
         </button>
         <button class="answer-btn" onclick="checkAnswer(2, this, false)">
-          ז.צ.ז<br>(זווית-צלע-זווית)
+          ASA<br>(Angle-Side-Angle)
         </button>
         <button class="answer-btn" onclick="checkAnswer(2, this, false)">
-          צ.צ.ז<br>(צלע-צלע-זווית)
+          SSA<br>(Side-Side-Angle)
         </button>
       </div>
 
       <div class="feedback" id="feedback2">
-        שוב יש לנו צלע-זווית-צלע! BO=DO, הזוויות ∠BOC=∠DOA קודקודיות, ו-CO=AO.
+        Again we have Side-Angle-Side! BO=DO, angles ∠BOC=∠DOA are vertical, and CO=AO.
       </div>
 
-      <div class="success-msg" id="success2">מצוין!</div>
-      <button class="continue-btn" id="continue2" onclick="showPage('explain2')">להמשיך להסבר</button>
+      <div class="success-msg" id="success2">Excellent!</div>
+      <button class="continue-btn" id="continue2" onclick="showPage('explain2')">Continue to Explanation</button>
     </div>
 
     <!-- ==================== -->
-    <!-- עמוד 4: הסבר סעיף ב -->
+    <!-- Page 4: Explanation Part B -->
     <!-- ==================== -->
     <div class="page" id="explain2">
-      <div class="explanation-title">הוכחת סעיף ב'</div>
-      <div class="explanation-subtitle">△BOC ≅ △DOA לפי צ.ז.צ</div>
+      <div class="explanation-title">Proof of Part B</div>
+      <div class="explanation-subtitle">△BOC ≅ △DOA by SAS</div>
 
       <div class="svg-container">
         <svg class="stage" width="550" height="420" viewBox="0 0 550 420">
@@ -831,43 +831,43 @@
       </div>
 
       <div class="reason-card" id="reason2-1">
-        <span class="reason-number" style="background: var(--yellow);">צ</span>
+        <span class="reason-number" style="background: var(--yellow);">S</span>
         <span class="reason-text">BO = DO</span>
-        <div class="reason-explanation">(נתון - O חוצה את BD)</div>
+        <div class="reason-explanation">(Given - O bisects BD)</div>
       </div>
 
       <div class="reason-card" id="reason2-2">
-        <span class="reason-number" style="background: var(--teal);">ז</span>
+        <span class="reason-number" style="background: var(--teal);">A</span>
         <span class="reason-text">∠BOC = ∠DOA</span>
-        <div class="reason-explanation">(זוויות קודקודיות)</div>
+        <div class="reason-explanation">(Vertical angles)</div>
       </div>
 
       <div class="reason-card" id="reason2-3">
-        <span class="reason-number" style="background: var(--lime);">צ</span>
+        <span class="reason-number" style="background: var(--lime);">S</span>
         <span class="reason-text">CO = AO</span>
-        <div class="reason-explanation">(נתון - O חוצה את AC)</div>
+        <div class="reason-explanation">(Given - O bisects AC)</div>
       </div>
 
       <div class="conclusion-card" id="conclusion2">
-        <div style="color: var(--green);">לכן:</div>
+        <div style="color: var(--green);">Therefore:</div>
         <div style="font-size: 32px; margin-top: 10px; direction: ltr;">△BOC ≅ △DOA</div>
-        <div style="font-size: 22px; margin-top: 10px;">(לפי משפט צ.ז.צ)</div>
+        <div style="font-size: 22px; margin-top: 10px;">(By SAS congruence theorem)</div>
       </div>
 
       <div class="conclusion-card" id="conclusion2b">
-        <div style="color: var(--teal);">מה ניתן להסיק?</div>
+        <div style="color: var(--teal);">What can we conclude?</div>
         <div style="font-size: 26px; margin-top: 10px; direction: ltr;">BC = DA</div>
-        <div style="font-size: 20px; margin-top: 8px;">(צלעות מתאימות במשולשים חופפים)</div>
+        <div style="font-size: 20px; margin-top: 8px;">(Corresponding sides of congruent triangles)</div>
       </div>
 
-      <button class="next-btn" id="next2" onclick="showPage('page3')">המשך לסעיף ג'</button>
+      <button class="next-btn" id="next2" onclick="showPage('page3')">Continue to Part C</button>
     </div>
 
     <!-- ==================== -->
-    <!-- עמוד 5: שאלה סעיף ג - עוברים למרובע השני -->
+    <!-- Page 5: Question Part C - moving to second quadrilateral -->
     <!-- ==================== -->
     <div class="page" id="page3">
-      <div class="section-header">סעיף ג' - עכשיו במרובע EFGH</div>
+      <div class="section-header">Part C - Now in Quadrilateral EFGH</div>
 
       <div class="svg-container">
         <svg class="stage" width="550" height="420" viewBox="0 0 550 420">
@@ -893,44 +893,44 @@
       </div>
 
       <div class="proven-box">
-        <div><strong>כבר הוכחנו במרובע ABCD:</strong></div>
+        <div><strong>Already proven in Quadrilateral ABCD:</strong></div>
         <div class="proven-text">△AOB ≅ △COD</div>
         <div class="proven-text">△BOC ≅ △DOA</div>
       </div>
 
-      <div class="question-box">הוכיחי ש:</div>
+      <div class="question-box">Prove that:</div>
       <div class="prove-statement">△EPF ≅ △GPH</div>
-      <div class="question-box">לפי איזה משפט חפיפה?</div>
+      <div class="question-box">By which congruence theorem?</div>
 
       <div class="answers" id="answers3">
         <button class="answer-btn" onclick="checkAnswer(3, this, false)">
-          צ.צ.צ<br>(צלע-צלע-צלע)
+          SSS<br>(Side-Side-Side)
         </button>
         <button class="answer-btn" onclick="checkAnswer(3, this, true)">
-          צ.ז.צ<br>(צלע-זווית-צלע)
+          SAS<br>(Side-Angle-Side)
         </button>
         <button class="answer-btn" onclick="checkAnswer(3, this, false)">
-          ז.צ.ז<br>(זווית-צלע-זווית)
+          ASA<br>(Angle-Side-Angle)
         </button>
         <button class="answer-btn" onclick="checkAnswer(3, this, false)">
-          צ.צ.ז<br>(צלע-צלע-זווית)
+          SSA<br>(Side-Side-Angle)
         </button>
       </div>
 
       <div class="feedback" id="feedback3">
-        אותו עיקרון! EP=GP, הזוויות ∠EPF=∠GPH קודקודיות, ו-FP=HP.
+        Same principle! EP=GP, angles ∠EPF=∠GPH are vertical, and FP=HP.
       </div>
 
-      <div class="success-msg" id="success3">מעולה!</div>
-      <button class="continue-btn" id="continue3" onclick="showPage('explain3')">להמשיך להסבר</button>
+      <div class="success-msg" id="success3">Outstanding!</div>
+      <button class="continue-btn" id="continue3" onclick="showPage('explain3')">Continue to Explanation</button>
     </div>
 
     <!-- ==================== -->
-    <!-- עמוד 6: הסבר סעיף ג -->
+    <!-- Page 6: Explanation Part C -->
     <!-- ==================== -->
     <div class="page" id="explain3">
-      <div class="explanation-title">הוכחת סעיף ג'</div>
-      <div class="explanation-subtitle">△EPF ≅ △GPH לפי צ.ז.צ</div>
+      <div class="explanation-title">Proof of Part C</div>
+      <div class="explanation-subtitle">△EPF ≅ △GPH by SAS</div>
 
       <div class="svg-container">
         <svg class="stage" width="550" height="420" viewBox="0 0 550 420">
@@ -957,43 +957,43 @@
       </div>
 
       <div class="reason-card" id="reason3-1">
-        <span class="reason-number" style="background: var(--yellow);">צ</span>
+        <span class="reason-number" style="background: var(--yellow);">S</span>
         <span class="reason-text">EP = GP</span>
-        <div class="reason-explanation">(נתון - P חוצה את EG)</div>
+        <div class="reason-explanation">(Given - P bisects EG)</div>
       </div>
 
       <div class="reason-card" id="reason3-2">
-        <span class="reason-number" style="background: var(--teal);">ז</span>
+        <span class="reason-number" style="background: var(--teal);">A</span>
         <span class="reason-text">∠EPF = ∠GPH</span>
-        <div class="reason-explanation">(זוויות קודקודיות)</div>
+        <div class="reason-explanation">(Vertical angles)</div>
       </div>
 
       <div class="reason-card" id="reason3-3">
-        <span class="reason-number" style="background: var(--lime);">צ</span>
+        <span class="reason-number" style="background: var(--lime);">S</span>
         <span class="reason-text">FP = HP</span>
-        <div class="reason-explanation">(נתון - P חוצה את FH)</div>
+        <div class="reason-explanation">(Given - P bisects FH)</div>
       </div>
 
       <div class="conclusion-card" id="conclusion3">
-        <div style="color: var(--green);">לכן:</div>
+        <div style="color: var(--green);">Therefore:</div>
         <div style="font-size: 32px; margin-top: 10px; direction: ltr;">△EPF ≅ △GPH</div>
-        <div style="font-size: 22px; margin-top: 10px;">(לפי משפט צ.ז.צ)</div>
+        <div style="font-size: 22px; margin-top: 10px;">(By SAS congruence theorem)</div>
       </div>
 
       <div class="conclusion-card" id="conclusion3b">
-        <div style="color: var(--teal);">מה ניתן להסיק?</div>
+        <div style="color: var(--teal);">What can we conclude?</div>
         <div style="font-size: 26px; margin-top: 10px; direction: ltr;">EF = GH</div>
-        <div style="font-size: 20px; margin-top: 8px;">(צלעות מתאימות במשולשים חופפים)</div>
+        <div style="font-size: 20px; margin-top: 8px;">(Corresponding sides of congruent triangles)</div>
       </div>
 
-      <button class="next-btn" id="next3" onclick="showPage('page4')">המשך לסעיף ד'</button>
+      <button class="next-btn" id="next3" onclick="showPage('page4')">Continue to Part D</button>
     </div>
 
     <!-- ==================== -->
-    <!-- עמוד 7: שאלה סעיף ד -->
+    <!-- Page 7: Question Part D -->
     <!-- ==================== -->
     <div class="page" id="page4">
-      <div class="section-header">סעיף ד' - הזוג הרביעי במרובע EFGH</div>
+      <div class="section-header">Part D - The Fourth Pair in Quadrilateral EFGH</div>
 
       <div class="svg-container">
         <svg class="stage" width="550" height="420" viewBox="0 0 550 420">
@@ -1014,43 +1014,43 @@
       </div>
 
       <div class="proven-box">
-        <div><strong>כבר הוכחנו:</strong></div>
+        <div><strong>Already proven:</strong></div>
         <div class="proven-text" style="font-size: 22px;">△AOB ≅ △COD, △BOC ≅ △DOA, △EPF ≅ △GPH</div>
       </div>
 
-      <div class="question-box">הוכיחי ש:</div>
+      <div class="question-box">Prove that:</div>
       <div class="prove-statement">△FPG ≅ △HPE</div>
-      <div class="question-box">לפי איזה משפט חפיפה?</div>
+      <div class="question-box">By which congruence theorem?</div>
 
       <div class="answers" id="answers4">
         <button class="answer-btn" onclick="checkAnswer(4, this, false)">
-          צ.צ.צ<br>(צלע-צלע-צלע)
+          SSS<br>(Side-Side-Side)
         </button>
         <button class="answer-btn" onclick="checkAnswer(4, this, true)">
-          צ.ז.צ<br>(צלע-זווית-צלע)
+          SAS<br>(Side-Angle-Side)
         </button>
         <button class="answer-btn" onclick="checkAnswer(4, this, false)">
-          ז.צ.ז<br>(זווית-צלע-זווית)
+          ASA<br>(Angle-Side-Angle)
         </button>
         <button class="answer-btn" onclick="checkAnswer(4, this, false)">
-          צ.צ.ז<br>(צלע-צלע-זווית)
+          SSA<br>(Side-Side-Angle)
         </button>
       </div>
 
       <div class="feedback" id="feedback4">
-        ושוב! FP=HP, הזוויות ∠FPG=∠HPE קודקודיות, ו-GP=EP.
+        And again! FP=HP, angles ∠FPG=∠HPE are vertical, and GP=EP.
       </div>
 
-      <div class="success-msg" id="success4">יופי!</div>
-      <button class="continue-btn" id="continue4" onclick="showPage('explain4')">להמשיך להסבר</button>
+      <div class="success-msg" id="success4">Great!</div>
+      <button class="continue-btn" id="continue4" onclick="showPage('explain4')">Continue to Explanation</button>
     </div>
 
     <!-- ==================== -->
-    <!-- עמוד 8: הסבר סעיף ד -->
+    <!-- Page 8: Explanation Part D -->
     <!-- ==================== -->
     <div class="page" id="explain4">
-      <div class="explanation-title">הוכחת סעיף ד'</div>
-      <div class="explanation-subtitle">△FPG ≅ △HPE לפי צ.ז.צ</div>
+      <div class="explanation-title">Proof of Part D</div>
+      <div class="explanation-subtitle">△FPG ≅ △HPE by SAS</div>
 
       <div class="svg-container">
         <svg class="stage" width="550" height="420" viewBox="0 0 550 420">
@@ -1077,50 +1077,50 @@
       </div>
 
       <div class="reason-card" id="reason4-1">
-        <span class="reason-number" style="background: var(--yellow);">צ</span>
+        <span class="reason-number" style="background: var(--yellow);">S</span>
         <span class="reason-text">FP = HP</span>
-        <div class="reason-explanation">(נתון - P חוצה את FH)</div>
+        <div class="reason-explanation">(Given - P bisects FH)</div>
       </div>
 
       <div class="reason-card" id="reason4-2">
-        <span class="reason-number" style="background: var(--teal);">ז</span>
+        <span class="reason-number" style="background: var(--teal);">A</span>
         <span class="reason-text">∠FPG = ∠HPE</span>
-        <div class="reason-explanation">(זוויות קודקודיות)</div>
+        <div class="reason-explanation">(Vertical angles)</div>
       </div>
 
       <div class="reason-card" id="reason4-3">
-        <span class="reason-number" style="background: var(--lime);">צ</span>
+        <span class="reason-number" style="background: var(--lime);">S</span>
         <span class="reason-text">GP = EP</span>
-        <div class="reason-explanation">(נתון - P חוצה את EG)</div>
+        <div class="reason-explanation">(Given - P bisects EG)</div>
       </div>
 
       <div class="conclusion-card" id="conclusion4">
-        <div style="color: var(--green);">לכן:</div>
+        <div style="color: var(--green);">Therefore:</div>
         <div style="font-size: 32px; margin-top: 10px; direction: ltr;">△FPG ≅ △HPE</div>
-        <div style="font-size: 22px; margin-top: 10px;">(לפי משפט צ.ז.צ)</div>
+        <div style="font-size: 22px; margin-top: 10px;">(By SAS congruence theorem)</div>
       </div>
 
       <div class="conclusion-card" id="conclusion4b">
-        <div style="color: var(--teal);">מה ניתן להסיק?</div>
+        <div style="color: var(--teal);">What can we conclude?</div>
         <div style="font-size: 26px; margin-top: 10px; direction: ltr;">FG = HE</div>
-        <div style="font-size: 20px; margin-top: 8px;">(צלעות מתאימות במשולשים חופפים)</div>
+        <div style="font-size: 20px; margin-top: 8px;">(Corresponding sides of congruent triangles)</div>
       </div>
 
-      <button class="next-btn" id="next4" onclick="showPage('final')">סיום</button>
+      <button class="next-btn" id="next4" onclick="showPage('final')">Finish</button>
     </div>
 
     <!-- ==================== -->
-    <!-- עמוד סיום -->
+    <!-- Final page -->
     <!-- ==================== -->
     <div class="page" id="final">
       <div class="final-success">
-        <h2>כל הכבוד !</h2>
-        <p>סיימת את כל התרגיל בהצלחה!</p>
+        <h2>Well Done!</h2>
+        <p>You completed the entire exercise successfully!</p>
 
-        <p style="margin-top: 30px; color: var(--teal);">מצאת את כל המשולשים החופפים:</p>
+        <p style="margin-top: 30px; color: var(--teal);">You found all the congruent triangles:</p>
 
         <div style="margin: 20px 0; font-size: 24px;">
-          <div style="color: var(--yellow); margin-bottom: 15px;">במרובע ABCD:</div>
+          <div style="color: var(--yellow); margin-bottom: 15px;">In Quadrilateral ABCD:</div>
           <div class="triangle-list">
             <div class="triangle-item" style="border-color: var(--yellow);">△AOB ≅ △COD</div>
             <div class="triangle-item" style="border-color: var(--lime);">△BOC ≅ △DOA</div>
@@ -1128,18 +1128,18 @@
         </div>
 
         <div style="margin: 20px 0; font-size: 24px;">
-          <div style="color: var(--cyan); margin-bottom: 15px;">במרובע EFGH:</div>
+          <div style="color: var(--cyan); margin-bottom: 15px;">In Quadrilateral EFGH:</div>
           <div class="triangle-list">
             <div class="triangle-item" style="border-color: var(--teal);">△EPF ≅ △GPH</div>
             <div class="triangle-item" style="border-color: var(--pink);">△FPG ≅ △HPE</div>
           </div>
         </div>
 
-        <p style="margin-top: 20px;">סה"כ: <strong style="color: var(--green);">8 משולשים</strong> ב-4 זוגות חופפים!</p>
+        <p style="margin-top: 20px;">Total: <strong style="color: var(--green);">8 triangles</strong> in 4 congruent pairs!</p>
 
-        <p style="margin-top: 20px; color: var(--yellow);">כל החפיפות היו לפי צ.ז.צ - בזכות הזוויות הקודקודיות!</p>
+        <p style="margin-top: 20px; color: var(--yellow);">All congruences were by SAS - thanks to vertical angles!</p>
 
-        <button class="next-btn show" onclick="location.reload()" style="margin-top: 30px;">להתחיל מחדש</button>
+        <button class="next-btn show" onclick="location.reload()" style="margin-top: 30px;">Start Over</button>
       </div>
     </div>
 

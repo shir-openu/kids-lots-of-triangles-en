@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>שאלה 4 - ישרים מקבילים</title>
+<title>Question 4 - Parallel Lines</title>
 <style>
   :root {
     --bg: #ffffff;
@@ -89,7 +89,7 @@
     background: rgba(6, 182, 212, 0.1);
     border-radius: 6px;
     display: inline-block;
-    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .questions-container {
@@ -198,7 +198,7 @@
     font-size: 16px;
     color: #92400e;
     display: none;
-    text-align: right;
+    text-align: left;
   }
 
   .hint-box.show {
@@ -282,82 +282,82 @@
 <body>
 
 <div class="container">
-  <div class="title">ישרים מקבילים</div>
+  <div class="title">Parallel Lines</div>
 
   <div class="exercise">
-    <div class="exercise-title">שאלה 4 - מצאו את הישרים המקבילים</div>
+    <div class="exercise-title">Question 4 - Find the Parallel Lines</div>
 
     <div class="drawing-container">
-      <img src="page_2_q_3_parallel.svg" alt="שרטוט ישרים מקבילים" style="max-height: 350px;">
+      <img src="page_2_q_3_parallel.svg" alt="Parallel lines diagram" style="max-height: 350px;">
     </div>
 
     <div class="given-box">
-      <div><strong>נתון - הזוויות המסומנות בשרטוט:</strong></div>
+      <div><strong>Given - The angles marked in the diagram:</strong></div>
       <div style="margin-top: 10px;">
-        <span class="given-item">ישר <b>a</b> עם חותך <b>e</b>: <span class="math-expr">70°</span></span>
-        <span class="given-item">ישר <b>c</b> עם חותך <b>e</b>: <span class="math-expr">110°</span></span>
+        <span class="given-item">Line <b>a</b> with transversal <b>e</b>: <span class="math-expr">70°</span></span>
+        <span class="given-item">Line <b>c</b> with transversal <b>e</b>: <span class="math-expr">110°</span></span>
       </div>
       <div>
-        <span class="given-item">ישר <b>d</b> עם חותך <b>f</b>: <span class="math-expr">110°</span></span>
-        <span class="given-item">ישר <b>c</b> עם חותך <b>f</b>: <span class="math-expr">70°</span></span>
+        <span class="given-item">Line <b>d</b> with transversal <b>f</b>: <span class="math-expr">110°</span></span>
+        <span class="given-item">Line <b>c</b> with transversal <b>f</b>: <span class="math-expr">70°</span></span>
       </div>
     </div>
 
     <div class="info-box">
-      <h4>תזכורת - מתי ישרים מקבילים?</h4>
+      <h4>Reminder - When are lines parallel?</h4>
       <ul style="margin: 5px 20px;">
-        <li>זוויות חד-צדדיות פנימיות שסכומן <b>180°</b> → ישרים מקבילים</li>
-        <li>זוויות מתאימות שוות → ישרים מקבילים</li>
-        <li>זוויות מתחלפות שוות → ישרים מקבילים</li>
+        <li>Co-interior angles (same-side interior) that sum to <b>180°</b> → parallel lines</li>
+        <li>Corresponding angles are equal → parallel lines</li>
+        <li>Alternate angles are equal → parallel lines</li>
       </ul>
     </div>
 
     <div class="questions-container">
-      <!-- שאלה א - ישרים אופקיים מקבילים -->
+      <!-- Question A - Horizontal parallel lines -->
       <div class="question-item" id="q1-item">
-        <div class="question-label">א. מצאו את הישרים האופקיים המקבילים:</div>
-        <p style="font-size: 16px; color: #666;">רמז: בדקו אילו ישרים יוצרים זוויות חד-צדדיות שסכומן 180°</p>
+        <div class="question-label">A. Find the horizontal parallel lines:</div>
+        <p style="font-size: 16px; color: #666;">Hint: Check which lines form co-interior angles that sum to 180°</p>
 
         <div class="answer-row">
-          <span>הישרים המקבילים הם:</span>
-          <input type="text" class="answer-input" id="q1" placeholder="לדוגמה: a,c,d" style="width: 150px;">
-          <button class="check-btn" onclick="checkParallel('q1')">בדוק</button>
+          <span>The parallel lines are:</span>
+          <input type="text" class="answer-input" id="q1" placeholder="e.g.: a,c,d" style="width: 150px;">
+          <button class="check-btn" onclick="checkParallel('q1')">Check</button>
         </div>
 
         <div class="hint-box" id="hint-q1"></div>
-        <div class="success-msg" id="success-q1">✓ נכון!</div>
+        <div class="success-msg" id="success-q1">✓ Correct!</div>
         <div class="explanation-box" id="explain-q1">
-          <strong>הסבר:</strong><br>
-          • ישר <b>a</b> עם ישר <b>c</b>: <span class="math-expr">70° + 110° = 180°</span> → <b>a ∥ c</b><br>
-          • ישר <b>c</b> עם ישר <b>d</b>: <span class="math-expr">70° + 110° = 180°</span> → <b>c ∥ d</b><br>
-          • לכן: <b>a ∥ c ∥ d</b>
+          <strong>Explanation:</strong><br>
+          • Line <b>a</b> with line <b>c</b>: <span class="math-expr">70° + 110° = 180°</span> → <b>a ∥ c</b><br>
+          • Line <b>c</b> with line <b>d</b>: <span class="math-expr">70° + 110° = 180°</span> → <b>c ∥ d</b><br>
+          • Therefore: <b>a ∥ c ∥ d</b>
         </div>
       </div>
 
-      <!-- שאלה ב - ישרים אלכסוניים מקבילים -->
+      <!-- Question B - Diagonal parallel lines -->
       <div class="question-item" id="q2-item">
-        <div class="question-label">ב. מצאו את הישרים האלכסוניים (החותכים) המקבילים:</div>
-        <p style="font-size: 16px; color: #666;">רמז: בדקו את הזוויות שהישרים e ו-f יוצרים עם ישר c</p>
+        <div class="question-label">B. Find the diagonal (transversal) parallel lines:</div>
+        <p style="font-size: 16px; color: #666;">Hint: Check the angles that lines e and f form with line c</p>
 
         <div class="answer-row">
-          <span>הישרים המקבילים הם:</span>
-          <input type="text" class="answer-input" id="q2" placeholder="לדוגמה: e,f" style="width: 150px;">
-          <button class="check-btn" onclick="checkParallel('q2')">בדוק</button>
+          <span>The parallel lines are:</span>
+          <input type="text" class="answer-input" id="q2" placeholder="e.g.: e,f" style="width: 150px;">
+          <button class="check-btn" onclick="checkParallel('q2')">Check</button>
         </div>
 
         <div class="hint-box" id="hint-q2"></div>
-        <div class="success-msg" id="success-q2">✓ נכון!</div>
+        <div class="success-msg" id="success-q2">✓ Correct!</div>
         <div class="explanation-box" id="explain-q2">
-          <strong>הסבר:</strong><br>
-          • ישר <b>e</b> יוצר עם <b>c</b> זווית <span class="math-expr">110°</span><br>
-          • ישר <b>f</b> יוצר עם <b>c</b> זווית <span class="math-expr">70°</span><br>
+          <strong>Explanation:</strong><br>
+          • Line <b>e</b> forms with <b>c</b> an angle of <span class="math-expr">110°</span><br>
+          • Line <b>f</b> forms with <b>c</b> an angle of <span class="math-expr">70°</span><br>
           • <span class="math-expr">110° + 70° = 180°</span> → <b>e ∥ f</b>
         </div>
       </div>
 
-      <!-- סיכום -->
+      <!-- Summary -->
       <div class="question-item" id="summary-item" style="display: none;">
-        <div class="question-label" style="color: var(--green);">🎉 סיכום - כל הישרים המקבילים:</div>
+        <div class="question-label" style="color: var(--green);">🎉 Summary - All Parallel Lines:</div>
         <div style="font-size: 22px; text-align: center; padding: 20px;">
           <span class="math-expr" style="font-size: 28px;">a ∥ c ∥ d</span>
           <br><br>
@@ -373,14 +373,14 @@
 <script>
 const hints = {
   'q1': [
-    'בדקו: 70° + 110° = ?',
-    'אם הסכום הוא 180°, הישרים מקבילים!',
-    'הישרים a, c, d - בדקו את הזוויות ביניהם'
+    'Check: 70° + 110° = ?',
+    'If the sum is 180°, the lines are parallel!',
+    'Lines a, c, d - check the angles between them'
   ],
   'q2': [
-    'הסתכלו על הזוויות של e ו-f עם ישר c',
-    '110° + 70° = 180° - מה זה אומר?',
-    'e ו-f הם החותכים - האם הם מקבילים?'
+    'Look at the angles of e and f with line c',
+    '110° + 70° = 180° - what does this mean?',
+    'e and f are the transversals - are they parallel?'
   ]
 };
 
@@ -436,13 +436,13 @@ function checkParallel(id) {
     setTimeout(() => input.classList.remove('wrong'), 300);
 
     const hintIndex = Math.min(attempts[id] - 1, hints[id].length - 1);
-    let hintText = '💡 רמז ' + attempts[id] + ': ' + hints[id][hintIndex];
+    let hintText = '💡 Hint ' + attempts[id] + ': ' + hints[id][hintIndex];
 
     if (attempts[id] >= 5) {
       if (id === 'q1') {
-        hintText += '<br>🎯 התשובה: a, c, d';
+        hintText += '<br>🎯 The answer: a, c, d';
       } else {
-        hintText += '<br>🎯 התשובה: e, f';
+        hintText += '<br>🎯 The answer: e, f';
       }
     }
 

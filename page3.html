@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>משוואות ואי-שוויונות - פתרון מודרך</title>
+<title>Equations and Inequalities - Guided Solution</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js"></script>
 <style>
   :root {
@@ -557,29 +557,29 @@
 <body>
 
 <div class="container">
-  <div class="header">משוואות ואי-שוויונות - פתרון מודרך</div>
+  <div class="header">Equations and Inequalities - Guided Solution</div>
 
   <div class="progress-bar">
     <div class="progress-fill" id="progressFill" style="width: 0%"></div>
   </div>
-  <div class="progress-text">תרגיל <span id="currentEx">1</span> מתוך 14</div>
+  <div class="progress-text">Exercise <span id="currentEx">1</span> of 14</div>
 
-  <button class="menu-btn" onclick="toggleMenu()">בחר תרגיל</button>
+  <button class="menu-btn" onclick="toggleMenu()">Choose Exercise</button>
 
   <!-- Menu -->
   <div class="exercise-menu" id="exMenu">
     <button class="menu-close" onclick="toggleMenu()">✕</button>
-    <div class="menu-title">בחר תרגיל</div>
+    <div class="menu-title">Choose Exercise</div>
     <div class="menu-grid" id="menuGrid"></div>
   </div>
 
   <div class="main-card">
 
-    <!-- ========== Exercise 1: 30א ========== -->
+    <!-- ========== Exercise 1: 30a ========== -->
     <div class="page active" id="page1">
       <div class="section-header">
-        <div class="ex-number">30א</div>
-        <div class="ex-title">משוואה עם שברים</div>
+        <div class="ex-number">30a</div>
+        <div class="ex-title">Equation with Fractions</div>
       </div>
 
       <div class="equation-box">
@@ -589,28 +589,28 @@
       <div class="step-card visible" id="s1-1">
         <div class="step-header">
           <div class="step-num">1</div>
-          <div class="step-title">מציאת מכנה משותף</div>
+          <div class="step-title">Finding the Common Denominator</div>
         </div>
         <div class="step-content">
-          המכנים הם: <span class="term-yellow">7</span>, <span class="term-teal">21</span>, <span class="term-pink">3</span>
+          The denominators are: <span class="term-yellow">7</span>, <span class="term-teal">21</span>, <span class="term-pink">3</span>
         </div>
-        <div class="question-text">מהו המכנה המשותף?</div>
+        <div class="question-text">What is the common denominator?</div>
         <div class="answers" id="ans1-1">
           <button class="answer-btn" onclick="check(1,1,'21',this)">21</button>
           <button class="answer-btn" onclick="check(1,1,'42',this)">42</button>
           <button class="answer-btn" onclick="check(1,1,'63',this)">63</button>
           <button class="answer-btn" onclick="check(1,1,'7',this)">7</button>
         </div>
-        <div class="feedback" id="fb1-1">21 הוא המכנה המשותף הקטן ביותר!</div>
+        <div class="feedback" id="fb1-1">21 is the least common denominator!</div>
       </div>
 
       <div class="step-card" id="s1-2">
         <div class="step-header">
           <div class="step-num">2</div>
-          <div class="step-title">הכפלה במכנה המשותף</div>
+          <div class="step-title">Multiplying by Common Denominator</div>
         </div>
         <div class="hint-box">
-          נכפיל את <strong>כל האגפים</strong> ב-21 כדי להיפטר מהשברים
+          We multiply <strong>both sides</strong> by 21 to eliminate the fractions
         </div>
         <div class="step-content">
           <div style="margin: 15px 0;">
@@ -620,57 +620,57 @@
             \[3(x+2) = (x+8) + 7(x-4) + 21x\]
           </div>
         </div>
-        <div class="question-text">מה מקבלים אחרי פתיחת כל הסוגריים?</div>
+        <div class="question-text">What do we get after expanding all brackets?</div>
         <div class="answers" id="ans1-2">
           <button class="answer-btn" onclick="check(1,2,'3x+6=29x-20',this)">\(3x+6 = 29x-20\)</button>
           <button class="answer-btn" onclick="check(1,2,'3x+2=29x-20',this)">\(3x+2 = 29x-20\)</button>
           <button class="answer-btn" onclick="check(1,2,'3x+6=21x-20',this)">\(3x+6 = 21x-20\)</button>
           <button class="answer-btn" onclick="check(1,2,'3x+6=29x+20',this)">\(3x+6 = 29x+20\)</button>
         </div>
-        <div class="feedback" id="fb1-2">אגף שמאל: 3x+6. אגף ימין: x+8+7x-28+21x = 29x-20</div>
+        <div class="feedback" id="fb1-2">Left side: 3x+6. Right side: x+8+7x-28+21x = 29x-20</div>
       </div>
 
       <div class="step-card" id="s1-3">
         <div class="step-header">
           <div class="step-num">3</div>
-          <div class="step-title">פתרון המשוואה</div>
+          <div class="step-title">Solving the Equation</div>
         </div>
         <div class="step-content">
           <div>\[3x + 6 = 29x - 20\]</div>
           <div style="margin-top: 15px;">\[6 + 20 = 29x - 3x\]</div>
           <div style="margin-top: 15px;">\[26 = 26x\]</div>
         </div>
-        <div class="question-text">מהו הפתרון?</div>
+        <div class="question-text">What is the solution?</div>
         <div class="answers" id="ans1-3">
           <button class="answer-btn" onclick="check(1,3,'1',this)">\(x = 1\)</button>
           <button class="answer-btn" onclick="check(1,3,'2',this)">\(x = 2\)</button>
           <button class="answer-btn" onclick="check(1,3,'-1',this)">\(x = -1\)</button>
           <button class="answer-btn" onclick="check(1,3,'26',this)">\(x = 26\)</button>
         </div>
-        <div class="feedback" id="fb1-3">26 = 26x, לכן x = 1</div>
+        <div class="feedback" id="fb1-3">26 = 26x, therefore x = 1</div>
       </div>
 
       <div class="final-box" id="final1">
-        <div class="final-title">כל הכבוד!</div>
+        <div class="final-title">Well done!</div>
         <div class="final-answer">\[x = 1\]</div>
         <div style="color: #888; font-size: 20px; margin-top: 15px;">
-          בדיקה: \(\frac{3}{7} = \frac{9}{21} - 1 + 1 = \frac{3}{7}\) ✓
+          Verification: \(\frac{3}{7} = \frac{9}{21} - 1 + 1 = \frac{3}{7}\) ✓
         </div>
       </div>
 
       <div class="success-msg" id="suc1"></div>
 
       <div class="navigation">
-        <button class="nav-btn" disabled>הקודם</button>
-        <button class="nav-btn next" onclick="goTo(2)">הבא</button>
+        <button class="nav-btn" disabled>Prev</button>
+        <button class="nav-btn next" onclick="goTo(2)">Next</button>
       </div>
     </div>
 
-    <!-- ========== Exercise 2: 30ב ========== -->
+    <!-- ========== Exercise 2: 30b ========== -->
     <div class="page" id="page2">
       <div class="section-header">
-        <div class="ex-number">30ב</div>
-        <div class="ex-title">משוואה עם שברים</div>
+        <div class="ex-number">30b</div>
+        <div class="ex-title">Equation with Fractions</div>
       </div>
 
       <div class="equation-box">
@@ -680,76 +680,76 @@
       <div class="step-card visible" id="s2-1">
         <div class="step-header">
           <div class="step-num">1</div>
-          <div class="step-title">מציאת מכנה משותף</div>
+          <div class="step-title">Finding the Common Denominator</div>
         </div>
         <div class="step-content">
-          המכנים הם: <span class="term-yellow">2</span>, <span class="term-teal">10</span>, <span class="term-pink">5</span>
+          The denominators are: <span class="term-yellow">2</span>, <span class="term-teal">10</span>, <span class="term-pink">5</span>
         </div>
-        <div class="question-text">מהו המכנה המשותף?</div>
+        <div class="question-text">What is the common denominator?</div>
         <div class="answers" id="ans2-1">
           <button class="answer-btn" onclick="check(2,1,'10',this)">10</button>
           <button class="answer-btn" onclick="check(2,1,'20',this)">20</button>
           <button class="answer-btn" onclick="check(2,1,'5',this)">5</button>
           <button class="answer-btn" onclick="check(2,1,'50',this)">50</button>
         </div>
-        <div class="feedback" id="fb2-1">10 מתחלק ב-2, ב-5 וב-10</div>
+        <div class="feedback" id="fb2-1">10 is divisible by 2, 5, and 10</div>
       </div>
 
       <div class="step-card" id="s2-2">
         <div class="step-header">
           <div class="step-num">2</div>
-          <div class="step-title">אחרי הכפלה ב-10</div>
+          <div class="step-title">After Multiplying by 10</div>
         </div>
         <div class="step-content">
           <div style="color: var(--green); font-size: 26px;">
             \[5(x+1) + (x-1) = 2(x+3) + 10\]
           </div>
         </div>
-        <div class="question-text">מה מקבלים אחרי פתיחת סוגריים ופישוט?</div>
+        <div class="question-text">What do we get after expanding brackets and simplifying?</div>
         <div class="answers" id="ans2-2">
           <button class="answer-btn" onclick="check(2,2,'6x+4=2x+16',this)">\(6x+4 = 2x+16\)</button>
           <button class="answer-btn" onclick="check(2,2,'5x+4=2x+16',this)">\(5x+4 = 2x+16\)</button>
           <button class="answer-btn" onclick="check(2,2,'6x+4=2x+13',this)">\(6x+4 = 2x+13\)</button>
           <button class="answer-btn" onclick="check(2,2,'6x+6=2x+16',this)">\(6x+6 = 2x+16\)</button>
         </div>
-        <div class="feedback" id="fb2-2">5x+5+x-1 = 6x+4, ו-2x+6+10 = 2x+16</div>
+        <div class="feedback" id="fb2-2">5x+5+x-1 = 6x+4, and 2x+6+10 = 2x+16</div>
       </div>
 
       <div class="step-card" id="s2-3">
         <div class="step-header">
           <div class="step-num">3</div>
-          <div class="step-title">פתרון</div>
+          <div class="step-title">Solution</div>
         </div>
         <div class="step-content">
           \[6x + 4 = 2x + 16\]
           <div style="margin-top: 10px;">\[4x = 12\]</div>
         </div>
-        <div class="question-text">מהו הפתרון?</div>
+        <div class="question-text">What is the solution?</div>
         <div class="answers" id="ans2-3">
           <button class="answer-btn" onclick="check(2,3,'3',this)">\(x = 3\)</button>
           <button class="answer-btn" onclick="check(2,3,'4',this)">\(x = 4\)</button>
           <button class="answer-btn" onclick="check(2,3,'2',this)">\(x = 2\)</button>
           <button class="answer-btn" onclick="check(2,3,'6',this)">\(x = 6\)</button>
         </div>
-        <div class="feedback" id="fb2-3">4x = 12, לכן x = 3</div>
+        <div class="feedback" id="fb2-3">4x = 12, therefore x = 3</div>
       </div>
 
       <div class="final-box" id="final2">
-        <div class="final-title">מצוין!</div>
+        <div class="final-title">Excellent!</div>
         <div class="final-answer">\[x = 3\]</div>
       </div>
 
       <div class="navigation">
-        <button class="nav-btn" onclick="goTo(1)">הקודם</button>
-        <button class="nav-btn next" onclick="goTo(3)">הבא</button>
+        <button class="nav-btn" onclick="goTo(1)">Prev</button>
+        <button class="nav-btn next" onclick="goTo(3)">Next</button>
       </div>
     </div>
 
     <!-- ========== Exercise 3: x(x+3)=x² ========== -->
     <div class="page" id="page3">
       <div class="section-header">
-        <div class="ex-number">א</div>
-        <div class="ex-title">משוואה עם סוגריים</div>
+        <div class="ex-number">a</div>
+        <div class="ex-title">Equation with Brackets</div>
       </div>
 
       <div class="equation-box">
@@ -759,54 +759,54 @@
       <div class="step-card visible" id="s3-1">
         <div class="step-header">
           <div class="step-num">1</div>
-          <div class="step-title">פתיחת סוגריים</div>
+          <div class="step-title">Expand brackets</div>
         </div>
         <div class="step-content">
           \[x \cdot x + x \cdot 3 = x^2\]
           <div style="margin-top: 15px; color: var(--green);">\[x^2 + 3x = x^2\]</div>
         </div>
-        <div class="question-text">מה נשאר אחרי חיסור \(x^2\) משני האגפים?</div>
+        <div class="question-text">What remains after subtracting \(x^2\) from both sides?</div>
         <div class="answers" id="ans3-1">
           <button class="answer-btn" onclick="check(3,1,'3x=0',this)">\(3x = 0\)</button>
           <button class="answer-btn" onclick="check(3,1,'3=0',this)">\(3 = 0\)</button>
           <button class="answer-btn" onclick="check(3,1,'x=3',this)">\(x = 3\)</button>
           <button class="answer-btn" onclick="check(3,1,'2x2=0',this)">\(2x^2 = 0\)</button>
         </div>
-        <div class="feedback" id="fb3-1">\(x^2 + 3x - x^2 = x^2 - x^2\) נותן \(3x = 0\)</div>
+        <div class="feedback" id="fb3-1">\(x^2 + 3x - x^2 = x^2 - x^2\) gives \(3x = 0\)</div>
       </div>
 
       <div class="step-card" id="s3-2">
         <div class="step-header">
           <div class="step-num">2</div>
-          <div class="step-title">פתרון</div>
+          <div class="step-title">Solution</div>
         </div>
         <div class="step-content">\[3x = 0\]</div>
-        <div class="question-text">מהו הפתרון?</div>
+        <div class="question-text">What is the solution?</div>
         <div class="answers" id="ans3-2">
           <button class="answer-btn" onclick="check(3,2,'0',this)">\(x = 0\)</button>
           <button class="answer-btn" onclick="check(3,2,'3',this)">\(x = 3\)</button>
           <button class="answer-btn" onclick="check(3,2,'-3',this)">\(x = -3\)</button>
           <button class="answer-btn" onclick="check(3,2,'1',this)">\(x = 1\)</button>
         </div>
-        <div class="feedback" id="fb3-2">אם 3x = 0, אז x = 0</div>
+        <div class="feedback" id="fb3-2">If 3x = 0, then x = 0</div>
       </div>
 
       <div class="final-box" id="final3">
-        <div class="final-title">נכון מאוד!</div>
+        <div class="final-title">Exactly right!</div>
         <div class="final-answer">\[x = 0\]</div>
       </div>
 
       <div class="navigation">
-        <button class="nav-btn" onclick="goTo(2)">הקודם</button>
-        <button class="nav-btn next" onclick="goTo(4)">הבא</button>
+        <button class="nav-btn" onclick="goTo(2)">Prev</button>
+        <button class="nav-btn next" onclick="goTo(4)">Next</button>
       </div>
     </div>
 
     <!-- ========== Exercise 4: 2+x²=x(x+1) ========== -->
     <div class="page" id="page4">
       <div class="section-header">
-        <div class="ex-number">ב</div>
-        <div class="ex-title">משוואה עם סוגריים</div>
+        <div class="ex-number">b</div>
+        <div class="ex-title">Equation with Brackets</div>
       </div>
 
       <div class="equation-box">
@@ -816,37 +816,37 @@
       <div class="step-card visible" id="s4-1">
         <div class="step-header">
           <div class="step-num">1</div>
-          <div class="step-title">פתיחת סוגריים</div>
+          <div class="step-title">Expand brackets</div>
         </div>
         <div class="step-content">
           \[2 + x^2 = x^2 + x\]
         </div>
-        <div class="question-text">מה נשאר אחרי חיסור \(x^2\)?</div>
+        <div class="question-text">What remains after subtracting \(x^2\)?</div>
         <div class="answers" id="ans4-1">
           <button class="answer-btn" onclick="check(4,1,'2=x',this)">\(2 = x\)</button>
           <button class="answer-btn" onclick="check(4,1,'2=2x',this)">\(2 = 2x\)</button>
           <button class="answer-btn" onclick="check(4,1,'x2=x',this)">\(x^2 = x\)</button>
           <button class="answer-btn" onclick="check(4,1,'2=-x',this)">\(2 = -x\)</button>
         </div>
-        <div class="feedback" id="fb4-1">\(2 + x^2 - x^2 = x^2 + x - x^2\) נותן \(2 = x\)</div>
+        <div class="feedback" id="fb4-1">\(2 + x^2 - x^2 = x^2 + x - x^2\) gives \(2 = x\)</div>
       </div>
 
       <div class="final-box" id="final4">
-        <div class="final-title">מעולה!</div>
+        <div class="final-title">Excellent!</div>
         <div class="final-answer">\[x = 2\]</div>
       </div>
 
       <div class="navigation">
-        <button class="nav-btn" onclick="goTo(3)">הקודם</button>
-        <button class="nav-btn next" onclick="goTo(5)">הבא</button>
+        <button class="nav-btn" onclick="goTo(3)">Prev</button>
+        <button class="nav-btn next" onclick="goTo(5)">Next</button>
       </div>
     </div>
 
     <!-- ========== Exercise 5: x(x-3)+5=x(x+2) ========== -->
     <div class="page" id="page5">
       <div class="section-header">
-        <div class="ex-number">ג</div>
-        <div class="ex-title">משוואה עם סוגריים</div>
+        <div class="ex-number">c</div>
+        <div class="ex-title">Equation with Brackets</div>
       </div>
 
       <div class="equation-box">
@@ -856,39 +856,39 @@
       <div class="step-card visible" id="s5-1">
         <div class="step-header">
           <div class="step-num">1</div>
-          <div class="step-title">פתיחת סוגריים ופישוט</div>
+          <div class="step-title">Expanding Brackets and Simplifying</div>
         </div>
         <div class="step-content">
           \[x^2 - 3x + 5 = x^2 + 2x\]
           <div style="margin-top: 15px;">\[-3x + 5 = 2x\]</div>
           <div style="margin-top: 15px;">\[5 = 5x\]</div>
         </div>
-        <div class="question-text">מהו הפתרון?</div>
+        <div class="question-text">What is the solution?</div>
         <div class="answers" id="ans5-1">
           <button class="answer-btn" onclick="check(5,1,'1',this)">\(x = 1\)</button>
           <button class="answer-btn" onclick="check(5,1,'5',this)">\(x = 5\)</button>
           <button class="answer-btn" onclick="check(5,1,'-1',this)">\(x = -1\)</button>
           <button class="answer-btn" onclick="check(5,1,'0',this)">\(x = 0\)</button>
         </div>
-        <div class="feedback" id="fb5-1">5 = 5x, לכן x = 1</div>
+        <div class="feedback" id="fb5-1">5 = 5x, therefore x = 1</div>
       </div>
 
       <div class="final-box" id="final5">
-        <div class="final-title">יופי!</div>
+        <div class="final-title">Great!</div>
         <div class="final-answer">\[x = 1\]</div>
       </div>
 
       <div class="navigation">
-        <button class="nav-btn" onclick="goTo(4)">הקודם</button>
-        <button class="nav-btn next" onclick="goTo(6)">הבא</button>
+        <button class="nav-btn" onclick="goTo(4)">Prev</button>
+        <button class="nav-btn next" onclick="goTo(6)">Next</button>
       </div>
     </div>
 
     <!-- ========== Exercise 6: x(x+4)=x(x+3)+5 ========== -->
     <div class="page" id="page6">
       <div class="section-header">
-        <div class="ex-number">ד</div>
-        <div class="ex-title">משוואה עם סוגריים</div>
+        <div class="ex-number">d</div>
+        <div class="ex-title">Equation with Brackets</div>
       </div>
 
       <div class="equation-box">
@@ -898,39 +898,39 @@
       <div class="step-card visible" id="s6-1">
         <div class="step-header">
           <div class="step-num">1</div>
-          <div class="step-title">פתיחת סוגריים ופישוט</div>
+          <div class="step-title">Expanding Brackets and Simplifying</div>
         </div>
         <div class="step-content">
           \[x^2 + 4x = x^2 + 3x + 5\]
           <div style="margin-top: 15px;">\[4x = 3x + 5\]</div>
           <div style="margin-top: 15px;">\[x = 5\]</div>
         </div>
-        <div class="question-text">מהו הפתרון?</div>
+        <div class="question-text">What is the solution?</div>
         <div class="answers" id="ans6-1">
           <button class="answer-btn" onclick="check(6,1,'5',this)">\(x = 5\)</button>
           <button class="answer-btn" onclick="check(6,1,'4',this)">\(x = 4\)</button>
           <button class="answer-btn" onclick="check(6,1,'3',this)">\(x = 3\)</button>
           <button class="answer-btn" onclick="check(6,1,'1',this)">\(x = 1\)</button>
         </div>
-        <div class="feedback" id="fb6-1">4x - 3x = 5, לכן x = 5</div>
+        <div class="feedback" id="fb6-1">4x - 3x = 5, therefore x = 5</div>
       </div>
 
       <div class="final-box" id="final6">
-        <div class="final-title">נהדר!</div>
+        <div class="final-title">Wonderful!</div>
         <div class="final-answer">\[x = 5\]</div>
       </div>
 
       <div class="navigation">
-        <button class="nav-btn" onclick="goTo(5)">הקודם</button>
-        <button class="nav-btn next" onclick="goTo(7)">הבא</button>
+        <button class="nav-btn" onclick="goTo(5)">Prev</button>
+        <button class="nav-btn next" onclick="goTo(7)">Next</button>
       </div>
     </div>
 
     <!-- ========== Exercise 7: x/(x-2)=4 ========== -->
     <div class="page" id="page7">
       <div class="section-header">
-        <div class="ex-number">א</div>
-        <div class="ex-title">משוואה עם מכנה משתנה</div>
+        <div class="ex-number">a</div>
+        <div class="ex-title">Equation with Variable Denominator</div>
       </div>
 
       <div class="equation-box">
@@ -938,47 +938,47 @@
       </div>
 
       <div class="domain-box">
-        <strong>תחום הצבה:</strong> \(x \neq 2\) (המכנה לא יכול להיות 0)
+        <strong>Domain:</strong> \(x \neq 2\) (denominator cannot be 0)
       </div>
 
       <div class="step-card visible" id="s7-1">
         <div class="step-header">
           <div class="step-num">1</div>
-          <div class="step-title">הכפלה במכנה ופתרון</div>
+          <div class="step-title">Multiplying by Denominator and Solving</div>
         </div>
         <div class="step-content">
-          <div>נכפיל ב-\((x-2)\):</div>
+          <div>Multiply by \((x-2)\):</div>
           <div style="margin-top: 15px;">\[x = 4(x-2)\]</div>
           <div style="margin-top: 15px;">\[x = 4x - 8\]</div>
           <div style="margin-top: 15px;">\[-3x = -8\]</div>
         </div>
-        <div class="question-text">מהו הפתרון?</div>
+        <div class="question-text">What is the solution?</div>
         <div class="answers" id="ans7-1">
           <button class="answer-btn" onclick="check(7,1,'8/3',this)">\(x = \frac{8}{3}\)</button>
           <button class="answer-btn" onclick="check(7,1,'3/8',this)">\(x = \frac{3}{8}\)</button>
           <button class="answer-btn" onclick="check(7,1,'8',this)">\(x = 8\)</button>
           <button class="answer-btn" onclick="check(7,1,'2',this)">\(x = 2\)</button>
         </div>
-        <div class="feedback" id="fb7-1">\(-3x = -8\), לכן \(x = \frac{8}{3}\)</div>
+        <div class="feedback" id="fb7-1">\(-3x = -8\), therefore \(x = \frac{8}{3}\)</div>
       </div>
 
       <div class="final-box" id="final7">
-        <div class="final-title">מצוין!</div>
+        <div class="final-title">Excellent!</div>
         <div class="final-answer">\[x = \frac{8}{3}\]</div>
-        <div style="color: var(--green); font-size: 20px;">\(\frac{8}{3} \neq 2\) - בתחום ✓</div>
+        <div style="color: var(--green); font-size: 20px;">\(\frac{8}{3} \neq 2\) - in domain ✓</div>
       </div>
 
       <div class="navigation">
-        <button class="nav-btn" onclick="goTo(6)">הקודם</button>
-        <button class="nav-btn next" onclick="goTo(8)">הבא</button>
+        <button class="nav-btn" onclick="goTo(6)">Prev</button>
+        <button class="nav-btn next" onclick="goTo(8)">Next</button>
       </div>
     </div>
 
     <!-- ========== Exercise 8: 6/(x-2)=1/(2x) ========== -->
     <div class="page" id="page8">
       <div class="section-header">
-        <div class="ex-number">ב</div>
-        <div class="ex-title">משוואה עם מכנה משתנה</div>
+        <div class="ex-number">b</div>
+        <div class="ex-title">Equation with Variable Denominator</div>
       </div>
 
       <div class="equation-box">
@@ -986,47 +986,47 @@
       </div>
 
       <div class="domain-box">
-        <strong>תחום הצבה:</strong> \(x \neq 2\) וגם \(x \neq 0\)
+        <strong>Domain:</strong> \(x \neq 2\) and \(x \neq 0\)
       </div>
 
       <div class="step-card visible" id="s8-1">
         <div class="step-header">
           <div class="step-num">1</div>
-          <div class="step-title">מכפלת לכסונים</div>
+          <div class="step-title">Cross Multiplication</div>
         </div>
-        <div class="hint-box">כשיש \(\frac{a}{b} = \frac{c}{d}\), נכפיל לכסונים: \(a \cdot d = b \cdot c\)</div>
+        <div class="hint-box">When we have \(\frac{a}{b} = \frac{c}{d}\), cross multiply: \(a \cdot d = b \cdot c\)</div>
         <div class="step-content">
           \[6 \cdot 2x = 1 \cdot (x-2)\]
           <div style="margin-top: 15px;">\[12x = x - 2\]</div>
           <div style="margin-top: 15px;">\[11x = -2\]</div>
         </div>
-        <div class="question-text">מהו הפתרון?</div>
+        <div class="question-text">What is the solution?</div>
         <div class="answers" id="ans8-1">
           <button class="answer-btn" onclick="check(8,1,'-2/11',this)">\(x = -\frac{2}{11}\)</button>
           <button class="answer-btn" onclick="check(8,1,'2/11',this)">\(x = \frac{2}{11}\)</button>
           <button class="answer-btn" onclick="check(8,1,'-2',this)">\(x = -2\)</button>
           <button class="answer-btn" onclick="check(8,1,'2',this)">\(x = 2\)</button>
         </div>
-        <div class="feedback" id="fb8-1">\(11x = -2\), לכן \(x = -\frac{2}{11}\)</div>
+        <div class="feedback" id="fb8-1">\(11x = -2\), therefore \(x = -\frac{2}{11}\)</div>
       </div>
 
       <div class="final-box" id="final8">
-        <div class="final-title">נכון!</div>
+        <div class="final-title">Correct!</div>
         <div class="final-answer">\[x = -\frac{2}{11}\]</div>
-        <div style="color: var(--green); font-size: 20px;">בתחום ✓</div>
+        <div style="color: var(--green); font-size: 20px;">In domain ✓</div>
       </div>
 
       <div class="navigation">
-        <button class="nav-btn" onclick="goTo(7)">הקודם</button>
-        <button class="nav-btn next" onclick="goTo(9)">הבא</button>
+        <button class="nav-btn" onclick="goTo(7)">Prev</button>
+        <button class="nav-btn next" onclick="goTo(9)">Next</button>
       </div>
     </div>
 
     <!-- ========== Exercise 9: (4x+16)/(x+4)=4 ========== -->
     <div class="page" id="page9">
       <div class="section-header">
-        <div class="ex-number">ג</div>
-        <div class="ex-title">משוואה עם מכנה משתנה</div>
+        <div class="ex-number">c</div>
+        <div class="ex-title">Equation with Variable Denominator</div>
       </div>
 
       <div class="equation-box">
@@ -1034,46 +1034,46 @@
       </div>
 
       <div class="domain-box">
-        <strong>תחום הצבה:</strong> \(x \neq -4\)
+        <strong>Domain:</strong> \(x \neq -4\)
       </div>
 
       <div class="step-card visible" id="s9-1">
         <div class="step-header">
           <div class="step-num">1</div>
-          <div class="step-title">פירוק וצמצום</div>
+          <div class="step-title">Factoring and Simplifying</div>
         </div>
-        <div class="hint-box">שימו לב! אפשר להוציא גורם משותף מהמונה: \(4x + 16 = 4(x+4)\)</div>
+        <div class="hint-box">Note! We can factor out a common factor from the numerator: \(4x + 16 = 4(x+4)\)</div>
         <div class="step-content">
           \[\frac{4(x+4)}{x+4} = 4\]
           <div style="margin-top: 15px; color: var(--green);">\[4 = 4\]</div>
         </div>
-        <div class="question-text">מה המסקנה?</div>
+        <div class="question-text">What is the conclusion?</div>
         <div class="answers" id="ans9-1">
-          <button class="answer-btn" onclick="check(9,1,'inf',this)">אינסוף פתרונות (כל \(x \neq -4\))</button>
+          <button class="answer-btn" onclick="check(9,1,'inf',this)">Infinite solutions (all \(x \neq -4\))</button>
           <button class="answer-btn" onclick="check(9,1,'0',this)">\(x = 0\)</button>
           <button class="answer-btn" onclick="check(9,1,'4',this)">\(x = 4\)</button>
-          <button class="answer-btn" onclick="check(9,1,'none',this)">אין פתרון</button>
+          <button class="answer-btn" onclick="check(9,1,'none',this)">No solution</button>
         </div>
-        <div class="feedback" id="fb9-1">4 = 4 נכון תמיד! זו זהות.</div>
+        <div class="feedback" id="fb9-1">4 = 4 is always true! This is an identity.</div>
       </div>
 
       <div class="final-box" id="final9">
-        <div class="final-title">מדהים!</div>
+        <div class="final-title">Amazing!</div>
         <div class="final-answer" style="font-size: 28px;">\[x \in \mathbb{R}, x \neq -4\]</div>
-        <div style="color: var(--yellow); font-size: 20px;">אינסוף פתרונות - זו זהות!</div>
+        <div style="color: var(--yellow); font-size: 20px;">Infinite solutions - this is an identity!</div>
       </div>
 
       <div class="navigation">
-        <button class="nav-btn" onclick="goTo(8)">הקודם</button>
-        <button class="nav-btn next" onclick="goTo(10)">הבא</button>
+        <button class="nav-btn" onclick="goTo(8)">Prev</button>
+        <button class="nav-btn next" onclick="goTo(10)">Next</button>
       </div>
     </div>
 
     <!-- ========== Exercise 10: 6/x=6/(x-3) ========== -->
     <div class="page" id="page10">
       <div class="section-header">
-        <div class="ex-number">ד</div>
-        <div class="ex-title">משוואה עם מכנה משתנה</div>
+        <div class="ex-number">d</div>
+        <div class="ex-title">Equation with Variable Denominator</div>
       </div>
 
       <div class="equation-box">
@@ -1081,38 +1081,38 @@
       </div>
 
       <div class="domain-box">
-        <strong>תחום הצבה:</strong> \(x \neq 0\) וגם \(x \neq 3\)
+        <strong>Domain:</strong> \(x \neq 0\) and \(x \neq 3\)
       </div>
 
       <div class="step-card visible" id="s10-1">
         <div class="step-header">
           <div class="step-num">1</div>
-          <div class="step-title">מכפלת לכסונים</div>
+          <div class="step-title">Cross Multiplication</div>
         </div>
         <div class="step-content">
           \[6(x-3) = 6x\]
           <div style="margin-top: 15px;">\[6x - 18 = 6x\]</div>
           <div style="margin-top: 15px; color: var(--red);">\[-18 = 0\]</div>
         </div>
-        <div class="question-text">מה המסקנה?</div>
+        <div class="question-text">What is the conclusion?</div>
         <div class="answers" id="ans10-1">
-          <button class="answer-btn" onclick="check(10,1,'none',this)">אין פתרון (משפט שקרי)</button>
+          <button class="answer-btn" onclick="check(10,1,'none',this)">No solution (false statement)</button>
           <button class="answer-btn" onclick="check(10,1,'18',this)">\(x = 18\)</button>
           <button class="answer-btn" onclick="check(10,1,'0',this)">\(x = 0\)</button>
-          <button class="answer-btn" onclick="check(10,1,'inf',this)">אינסוף פתרונות</button>
+          <button class="answer-btn" onclick="check(10,1,'inf',this)">Infinite solutions</button>
         </div>
-        <div class="feedback" id="fb10-1">-18 = 0 הוא משפט שקרי!</div>
+        <div class="feedback" id="fb10-1">-18 = 0 is a false statement!</div>
       </div>
 
       <div class="final-box" id="final10">
-        <div class="final-title">נכון!</div>
-        <div class="final-answer" style="font-size: 28px;">אין פתרון</div>
-        <div style="color: var(--red); font-size: 20px;">\(\emptyset\) - הקבוצה הריקה</div>
+        <div class="final-title">Correct!</div>
+        <div class="final-answer" style="font-size: 28px;">No solution</div>
+        <div style="color: var(--red); font-size: 20px;">\(\emptyset\) - the empty set</div>
       </div>
 
       <div class="navigation">
-        <button class="nav-btn" onclick="goTo(9)">הקודם</button>
-        <button class="nav-btn next" onclick="goTo(11)">הבא</button>
+        <button class="nav-btn" onclick="goTo(9)">Prev</button>
+        <button class="nav-btn next" onclick="goTo(11)">Next</button>
       </div>
     </div>
 
@@ -1120,7 +1120,7 @@
     <div class="page" id="page11">
       <div class="section-header">
         <div class="ex-number">1</div>
-        <div class="ex-title">אי-שוויון</div>
+        <div class="ex-title">Inequality</div>
       </div>
 
       <div class="equation-box">
@@ -1130,25 +1130,25 @@
       <div class="step-card visible" id="s11-1">
         <div class="step-header">
           <div class="step-num">1</div>
-          <div class="step-title">איסוף איברים ופתרון</div>
+          <div class="step-title">Collecting Terms and Solving</div>
         </div>
         <div class="step-content">
           \[12x + 4x < -8 + 4\]
           <div style="margin-top: 15px;">\[16x < -4\]</div>
         </div>
-        <div class="hint-box">מחלקים ב-16 (מספר <strong>חיובי</strong>) - הסימן <strong>נשאר</strong>!</div>
-        <div class="question-text">מהו הפתרון?</div>
+        <div class="hint-box">Dividing by 16 (a <strong>positive</strong> number) - the sign <strong>stays</strong>!</div>
+        <div class="question-text">What is the solution?</div>
         <div class="answers" id="ans11-1">
           <button class="answer-btn" onclick="check(11,1,'x<-1/4',this)">\(x < -\frac{1}{4}\)</button>
           <button class="answer-btn" onclick="check(11,1,'x>-1/4',this)">\(x > -\frac{1}{4}\)</button>
           <button class="answer-btn" onclick="check(11,1,'x<1/4',this)">\(x < \frac{1}{4}\)</button>
           <button class="answer-btn" onclick="check(11,1,'x>1/4',this)">\(x > \frac{1}{4}\)</button>
         </div>
-        <div class="feedback" id="fb11-1">\(16x < -4\) נותן \(x < -\frac{1}{4}\)</div>
+        <div class="feedback" id="fb11-1">\(16x < -4\) gives \(x < -\frac{1}{4}\)</div>
       </div>
 
       <div class="final-box" id="final11">
-        <div class="final-title">מעולה!</div>
+        <div class="final-title">Excellent!</div>
         <div class="final-answer">\[x < -\frac{1}{4}\]</div>
         <div class="number-line-box">
           <div class="number-line">
@@ -1159,13 +1159,13 @@
             <div class="nl-point empty" style="left: 45%;"></div>
             <div class="nl-label" style="left: 45%;">-¼</div>
           </div>
-          <div class="nl-description">עיגול פתוח (לא כולל), חץ שמאלה</div>
+          <div class="nl-description">Open circle (not included), arrow left</div>
         </div>
       </div>
 
       <div class="navigation">
-        <button class="nav-btn" onclick="goTo(10)">הקודם</button>
-        <button class="nav-btn next" onclick="goTo(12)">הבא</button>
+        <button class="nav-btn" onclick="goTo(10)">Prev</button>
+        <button class="nav-btn next" onclick="goTo(12)">Next</button>
       </div>
     </div>
 
@@ -1173,7 +1173,7 @@
     <div class="page" id="page12">
       <div class="section-header">
         <div class="ex-number">2</div>
-        <div class="ex-title">אי-שוויון</div>
+        <div class="ex-title">Inequality</div>
       </div>
 
       <div class="equation-box">
@@ -1183,7 +1183,7 @@
       <div class="step-card visible" id="s12-1">
         <div class="step-header">
           <div class="step-num">1</div>
-          <div class="step-title">פתיחת סוגריים ופישוט</div>
+          <div class="step-title">Expanding Brackets and Simplifying</div>
         </div>
         <div class="step-content">
           \[11 - 5x + 15 \geq -4\]
@@ -1191,20 +1191,20 @@
           <div style="margin-top: 15px;">\[-5x \geq -30\]</div>
         </div>
         <div class="warning-box">
-          <strong>שימו לב!</strong> מחלקים ב-(-5) - מספר <strong>שלילי</strong> - הופכים את הסימן!
+          <strong>Note!</strong> Dividing by (-5) - a <strong>negative</strong> number - flip the sign!
         </div>
-        <div class="question-text">מהו הפתרון?</div>
+        <div class="question-text">What is the solution?</div>
         <div class="answers" id="ans12-1">
           <button class="answer-btn" onclick="check(12,1,'x<=6',this)">\(x \leq 6\)</button>
           <button class="answer-btn" onclick="check(12,1,'x>=6',this)">\(x \geq 6\)</button>
           <button class="answer-btn" onclick="check(12,1,'x<=-6',this)">\(x \leq -6\)</button>
           <button class="answer-btn" onclick="check(12,1,'x>=-6',this)">\(x \geq -6\)</button>
         </div>
-        <div class="feedback" id="fb12-1">\(-5x \geq -30\) הופך ל-\(x \leq 6\) (הפכנו סימן!)</div>
+        <div class="feedback" id="fb12-1">\(-5x \geq -30\) becomes \(x \leq 6\) (sign flipped!)</div>
       </div>
 
       <div class="final-box" id="final12">
-        <div class="final-title">יופי!</div>
+        <div class="final-title">Great!</div>
         <div class="final-answer">\[x \leq 6\]</div>
         <div class="number-line-box">
           <div class="number-line">
@@ -1215,13 +1215,13 @@
             <div class="nl-point filled" style="left: 70%;"></div>
             <div class="nl-label" style="left: 70%;">6</div>
           </div>
-          <div class="nl-description">עיגול סגור (כולל), חץ שמאלה</div>
+          <div class="nl-description">Closed circle (included), arrow left</div>
         </div>
       </div>
 
       <div class="navigation">
-        <button class="nav-btn" onclick="goTo(11)">הקודם</button>
-        <button class="nav-btn next" onclick="goTo(13)">הבא</button>
+        <button class="nav-btn" onclick="goTo(11)">Prev</button>
+        <button class="nav-btn next" onclick="goTo(13)">Next</button>
       </div>
     </div>
 
@@ -1229,7 +1229,7 @@
     <div class="page" id="page13">
       <div class="section-header">
         <div class="ex-number">3</div>
-        <div class="ex-title">אי-שוויון</div>
+        <div class="ex-title">Inequality</div>
       </div>
 
       <div class="equation-box">
@@ -1239,7 +1239,7 @@
       <div class="step-card visible" id="s13-1">
         <div class="step-header">
           <div class="step-num">1</div>
-          <div class="step-title">פתיחת סוגריים ופישוט</div>
+          <div class="step-title">Expanding Brackets and Simplifying</div>
         </div>
         <div class="step-content">
           \[12 - 3x + 15 < 39\]
@@ -1247,20 +1247,20 @@
           <div style="margin-top: 15px;">\[-3x < 12\]</div>
         </div>
         <div class="warning-box">
-          <strong>שימו לב!</strong> מחלקים ב-(-3) - מספר <strong>שלילי</strong> - הופכים את הסימן!
+          <strong>Note!</strong> Dividing by (-3) - a <strong>negative</strong> number - flip the sign!
         </div>
-        <div class="question-text">מהו הפתרון?</div>
+        <div class="question-text">What is the solution?</div>
         <div class="answers" id="ans13-1">
           <button class="answer-btn" onclick="check(13,1,'x>-4',this)">\(x > -4\)</button>
           <button class="answer-btn" onclick="check(13,1,'x<-4',this)">\(x < -4\)</button>
           <button class="answer-btn" onclick="check(13,1,'x>4',this)">\(x > 4\)</button>
           <button class="answer-btn" onclick="check(13,1,'x<4',this)">\(x < 4\)</button>
         </div>
-        <div class="feedback" id="fb13-1">\(-3x < 12\) הופך ל-\(x > -4\) (הפכנו סימן!)</div>
+        <div class="feedback" id="fb13-1">\(-3x < 12\) becomes \(x > -4\) (sign flipped!)</div>
       </div>
 
       <div class="final-box" id="final13">
-        <div class="final-title">מצוין!</div>
+        <div class="final-title">Excellent!</div>
         <div class="final-answer">\[x > -4\]</div>
         <div class="number-line-box">
           <div class="number-line">
@@ -1271,13 +1271,13 @@
             <div class="nl-point empty" style="left: 30%;"></div>
             <div class="nl-label" style="left: 30%;">-4</div>
           </div>
-          <div class="nl-description">עיגול פתוח (לא כולל), חץ ימינה</div>
+          <div class="nl-description">Open circle (not included), arrow right</div>
         </div>
       </div>
 
       <div class="navigation">
-        <button class="nav-btn" onclick="goTo(12)">הקודם</button>
-        <button class="nav-btn next" onclick="goTo(14)">הבא</button>
+        <button class="nav-btn" onclick="goTo(12)">Prev</button>
+        <button class="nav-btn next" onclick="goTo(14)">Next</button>
       </div>
     </div>
 
@@ -1285,7 +1285,7 @@
     <div class="page" id="page14">
       <div class="section-header">
         <div class="ex-number">4</div>
-        <div class="ex-title">אי-שוויון</div>
+        <div class="ex-title">Inequality</div>
       </div>
 
       <div class="equation-box">
@@ -1295,7 +1295,7 @@
       <div class="step-card visible" id="s14-1">
         <div class="step-header">
           <div class="step-num">1</div>
-          <div class="step-title">פתיחת סוגריים ופישוט</div>
+          <div class="step-title">Expanding Brackets and Simplifying</div>
         </div>
         <div class="step-content">
           \[6x + 6 - 12x - 8 < 5x + 20\]
@@ -1303,20 +1303,20 @@
           <div style="margin-top: 15px;">\[-11x < 22\]</div>
         </div>
         <div class="warning-box">
-          <strong>שימו לב!</strong> מחלקים ב-(-11) - מספר <strong>שלילי</strong> - הופכים את הסימן!
+          <strong>Note!</strong> Dividing by (-11) - a <strong>negative</strong> number - flip the sign!
         </div>
-        <div class="question-text">מהו הפתרון?</div>
+        <div class="question-text">What is the solution?</div>
         <div class="answers" id="ans14-1">
           <button class="answer-btn" onclick="check(14,1,'x>-2',this)">\(x > -2\)</button>
           <button class="answer-btn" onclick="check(14,1,'x<-2',this)">\(x < -2\)</button>
           <button class="answer-btn" onclick="check(14,1,'x>2',this)">\(x > 2\)</button>
           <button class="answer-btn" onclick="check(14,1,'x<2',this)">\(x < 2\)</button>
         </div>
-        <div class="feedback" id="fb14-1">\(-11x < 22\) הופך ל-\(x > -2\) (הפכנו סימן!)</div>
+        <div class="feedback" id="fb14-1">\(-11x < 22\) becomes \(x > -2\) (sign flipped!)</div>
       </div>
 
       <div class="final-box" id="final14">
-        <div class="final-title">סיימת הכל!</div>
+        <div class="final-title">All done!</div>
         <div class="final-answer">\[x > -2\]</div>
         <div class="number-line-box">
           <div class="number-line">
@@ -1327,13 +1327,13 @@
             <div class="nl-point empty" style="left: 35%;"></div>
             <div class="nl-label" style="left: 35%;">-2</div>
           </div>
-          <div class="nl-description">עיגול פתוח (לא כולל), חץ ימינה</div>
+          <div class="nl-description">Open circle (not included), arrow right</div>
         </div>
       </div>
 
       <div class="navigation">
-        <button class="nav-btn" onclick="goTo(13)">הקודם</button>
-        <button class="nav-btn next" onclick="goTo(1)">חזור להתחלה</button>
+        <button class="nav-btn" onclick="goTo(13)">Prev</button>
+        <button class="nav-btn next" onclick="goTo(1)">Back to Start</button>
       </div>
     </div>
 
@@ -1425,16 +1425,16 @@ function buildMenu() {
   const grid = document.getElementById('menuGrid');
   grid.innerHTML = '';
   const titles = [
-    ['30א', '(x+2)/7 = (x+8)/21 + ...'],
-    ['30ב', '(x+1)/2 + (x-1)/10 = ...'],
-    ['א', 'x(x+3) = x²'],
-    ['ב', '2 + x² = x(x+1)'],
-    ['ג', 'x(x-3) + 5 = x(x+2)'],
-    ['ד', 'x(x+4) = x(x+3) + 5'],
-    ['א', 'x/(x-2) = 4'],
-    ['ב', '6/(x-2) = 1/(2x)'],
-    ['ג', '(4x+16)/(x+4) = 4'],
-    ['ד', '6/x = 6/(x-3)'],
+    ['30a', '(x+2)/7 = (x+8)/21 + ...'],
+    ['30b', '(x+1)/2 + (x-1)/10 = ...'],
+    ['a', 'x(x+3) = x²'],
+    ['b', '2 + x² = x(x+1)'],
+    ['c', 'x(x-3) + 5 = x(x+2)'],
+    ['d', 'x(x+4) = x(x+3) + 5'],
+    ['a', 'x/(x-2) = 4'],
+    ['b', '6/(x-2) = 1/(2x)'],
+    ['c', '(4x+16)/(x+4) = 4'],
+    ['d', '6/x = 6/(x-3)'],
     ['1', '12x - 4 < -4x - 8'],
     ['2', '11 + 5(-x+3) ≥ -4'],
     ['3', '12 - 3(x-5) < 39'],
@@ -1444,7 +1444,7 @@ function buildMenu() {
   for (let i = 0; i < 14; i++) {
     const item = document.createElement('div');
     item.className = 'menu-item' + (completed.has(i+1) ? ' completed' : '');
-    item.innerHTML = `<div class="menu-item-num">תרגיל ${titles[i][0]}</div><div class="menu-item-eq">${titles[i][1]}</div>`;
+    item.innerHTML = `<div class="menu-item-num">Ex. ${titles[i][0]}</div><div class="menu-item-eq">${titles[i][1]}</div>`;
     item.onclick = () => { goTo(i+1); toggleMenu(); };
     grid.appendChild(item);
   }

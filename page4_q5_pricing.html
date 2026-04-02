@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>גרפים של מחירים - אורן ותומר</title>
+<title>Price Graphs - Oren and Tomer</title>
 <style>
   :root {
     --bg: #ffffff;
@@ -404,10 +404,10 @@
 <body>
 
 <div class="container">
-  <div class="title">שאלה 5 - גרפים של מחירים</div>
-  <div class="subtitle">השוואת הצעות מחיר: אורן מול תומר</div>
+  <div class="title">Question 5 - Price Graphs</div>
+  <div class="subtitle">Comparing Price Proposals: Oren vs. Tomer</div>
 
-  <div class="progress-text">התקדמות: <span id="progressCount">0</span> מתוך 5 שאלות</div>
+  <div class="progress-text">Progress: <span id="progressCount">0</span> of 5 questions</div>
   <div class="progress-bar">
     <div class="progress-fill" id="progressFill"></div>
   </div>
@@ -435,8 +435,8 @@
 
         <!-- Axis labels -->
         <text x="485" y="345" font-size="16" fill="#1a1a1a">x</text>
-        <text x="55" y="18" font-size="16" fill="#1a1a1a">מחיר (₪)</text>
-        <text x="240" y="375" font-size="16" fill="#1a1a1a">שטח (מ"ר)</text>
+        <text x="55" y="18" font-size="16" fill="#1a1a1a">Price (NIS)</text>
+        <text x="240" y="375" font-size="16" fill="#1a1a1a">Area (sq. m)</text>
 
         <!-- Y-axis values -->
         <text x="40" y="345" font-size="14" fill="#666" text-anchor="end">0</text>
@@ -500,131 +500,131 @@
     <div class="legend">
       <div class="legend-item">
         <div class="legend-line" style="background: #ef4444;"></div>
-        <span>גרף I</span>
+        <span>Graph I</span>
       </div>
       <div class="legend-item">
         <div class="legend-line" style="background: #3b82f6;"></div>
-        <span>גרף II</span>
+        <span>Graph II</span>
       </div>
       <div class="legend-item">
         <div style="width: 14px; height: 14px; background: #22c55e; border-radius: 50%;"></div>
-        <span>נקודת חיתוך</span>
+        <span>Intersection point</span>
       </div>
     </div>
 
     <div class="given-box">
-      <div style="margin-bottom: 10px;"><strong>נתון:</strong></div>
+      <div style="margin-bottom: 10px;"><strong>Given:</strong></div>
       <div style="display: flex; gap: 30px; flex-wrap: wrap; justify-content: center;">
         <div>
-          <strong>אורן:</strong>
+          <strong>Oren:</strong>
           <span class="formula">Price = 700 + 20x</span>
         </div>
         <div>
-          <strong>תומר:</strong>
+          <strong>Tomer:</strong>
           <span class="formula">Price = 48x</span>
         </div>
       </div>
       <div style="margin-top: 10px; color: #666; font-size: 16px;">
-        (x = שטח במ"ר, Price = מחיר ב-₪)
+        (x = area in sq. m, y = price in NIS)
       </div>
     </div>
 
     <!-- Question A: Which graph is which -->
     <div class="question-section" id="qa-section">
       <div class="question-header">
-        <div class="question-letter">א</div>
-        <div class="question-text">איזה גרף שייך לכל אחד מהרצפים?</div>
+        <div class="question-letter">A</div>
+        <div class="question-text">Which graph belongs to each gardener?</div>
       </div>
 
       <div class="sub-question" id="qa1-box">
-        <div class="sub-label">גרף I שייך ל:</div>
+        <div class="sub-label">Graph I belongs to:</div>
         <div class="options-grid" id="qa1-options">
-          <button class="option-btn" onclick="checkOption('qa1', 'tomer', this)">תומר</button>
-          <button class="option-btn" onclick="checkOption('qa1', 'oren', this)">אורן</button>
+          <button class="option-btn" onclick="checkOption('qa1', 'tomer', this)">Tomer</button>
+          <button class="option-btn" onclick="checkOption('qa1', 'oren', this)">Oren</button>
         </div>
         <div class="hint-box" id="hint-qa1"></div>
-        <div class="success-msg" id="success-qa1">נכון! גרף I עובר דרך הראשית</div>
+        <div class="success-msg" id="success-qa1">Correct! Graph I passes through the origin</div>
       </div>
 
       <div class="sub-question" id="qa2-box">
-        <div class="sub-label">גרף II שייך ל:</div>
+        <div class="sub-label">Graph II belongs to:</div>
         <div class="options-grid" id="qa2-options">
-          <button class="option-btn" onclick="checkOption('qa2', 'tomer', this)">תומר</button>
-          <button class="option-btn" onclick="checkOption('qa2', 'oren', this)">אורן</button>
+          <button class="option-btn" onclick="checkOption('qa2', 'tomer', this)">Tomer</button>
+          <button class="option-btn" onclick="checkOption('qa2', 'oren', this)">Oren</button>
         </div>
         <div class="hint-box" id="hint-qa2"></div>
-        <div class="success-msg" id="success-qa2">נכון! גרף II מתחיל ב-700</div>
+        <div class="success-msg" id="success-qa2">Correct! Graph II starts at 700</div>
       </div>
     </div>
 
     <!-- Question B1: Area where same price -->
     <div class="question-section" id="qb1-section">
       <div class="question-header">
-        <div class="question-letter">ב1</div>
-        <div class="question-text">עבור איזה שטח המחיר זהה אצל שניהם?</div>
+        <div class="question-letter">B1</div>
+        <div class="question-text">For what area is the price the same for both?</div>
       </div>
       <div class="input-row">
         <input type="text" class="answer-input" id="qb1" placeholder="?" maxlength="4">
-        <span class="unit">מ"ר</span>
-        <button class="check-btn" onclick="checkNumeric('qb1', 25)">בדוק</button>
+        <span class="unit">sq. m</span>
+        <button class="check-btn" onclick="checkNumeric('qb1', 25)">Check</button>
       </div>
       <div class="hint-box" id="hint-qb1"></div>
-      <div class="success-msg" id="success-qb1">נכון! בדיוק בנקודת החיתוך</div>
+      <div class="success-msg" id="success-qb1">Correct! Exactly at the intersection point</div>
       <div class="attempt-counter" id="att-qb1"></div>
     </div>
 
     <!-- Question B2: Price at that area -->
     <div class="question-section" id="qb2-section">
       <div class="question-header">
-        <div class="question-letter">ב2</div>
-        <div class="question-text">מה המחיר עבור אותו שטח?</div>
+        <div class="question-letter">B2</div>
+        <div class="question-text">What is the price for that area?</div>
       </div>
       <div class="input-row">
         <input type="text" class="answer-input" id="qb2" placeholder="?" maxlength="5">
         <span class="unit">₪</span>
-        <button class="check-btn" onclick="checkNumeric('qb2', 1200)">בדוק</button>
+        <button class="check-btn" onclick="checkNumeric('qb2', 1200)">Check</button>
       </div>
       <div class="hint-box" id="hint-qb2"></div>
-      <div class="success-msg" id="success-qb2">מצוין! 48×25 = 1200 ₪</div>
+      <div class="success-msg" id="success-qb2">Excellent! 48×25 = 1200 NIS</div>
       <div class="attempt-counter" id="att-qb2"></div>
     </div>
 
     <!-- Question C1: Who is cheaper for 17m² -->
     <div class="question-section" id="qc1-section">
       <div class="question-header">
-        <div class="question-letter">ג1</div>
-        <div class="question-text">עבור שטח של 17 מ"ר - מי זול יותר?</div>
+        <div class="question-letter">C1</div>
+        <div class="question-text">For an area of 17 sq. m - who is cheaper?</div>
       </div>
       <div class="options-grid" id="qc1-options">
-        <button class="option-btn" onclick="checkOption('qc1', 'tomer', this)">תומר</button>
-        <button class="option-btn" onclick="checkOption('qc1', 'oren', this)">אורן</button>
+        <button class="option-btn" onclick="checkOption('qc1', 'tomer', this)">Tomer</button>
+        <button class="option-btn" onclick="checkOption('qc1', 'oren', this)">Oren</button>
       </div>
       <div class="hint-box" id="hint-qc1"></div>
-      <div class="success-msg" id="success-qc1">נכון! תומר: 816₪, אורן: 1040₪</div>
+      <div class="success-msg" id="success-qc1">Correct! Tomer: 816₪, Oren: 1040₪</div>
     </div>
 
     <!-- Question C2: By how much -->
     <div class="question-section" id="qc2-section">
       <div class="question-header">
-        <div class="question-letter">ג2</div>
-        <div class="question-text">בכמה הוא זול יותר?</div>
+        <div class="question-letter">C2</div>
+        <div class="question-text">By how much is he cheaper?</div>
       </div>
       <div class="input-row">
         <input type="text" class="answer-input" id="qc2" placeholder="?" maxlength="4">
         <span class="unit">₪</span>
-        <button class="check-btn" onclick="checkNumeric('qc2', 224)">בדוק</button>
+        <button class="check-btn" onclick="checkNumeric('qc2', 224)">Check</button>
       </div>
       <div class="hint-box" id="hint-qc2"></div>
-      <div class="success-msg" id="success-qc2">מעולה! 1040 - 816 = 224 ₪</div>
+      <div class="success-msg" id="success-qc2">Excellent! 1040 - 816 = 224 NIS</div>
       <div class="attempt-counter" id="att-qc2"></div>
     </div>
 
   </div>
 
   <div class="final-celebration" id="finalCelebration">
-    <h2>כל הכבוד! סיימת את כל השאלות!</h2>
+    <h2>Well done! You completed all the questions!</h2>
     <div style="font-size: 20px; color: #166534;">
-      למדת לזהות גרפים לפי נוסחאות ולחשב נקודות חיתוך!
+      You learned to identify graphs by formulas and calculate intersection points!
     </div>
   </div>
 
@@ -646,34 +646,34 @@ const correctAnswers = {
 // Progressive hints (without revealing answer)
 const hints = {
   'qa1': [
-    'רמז: שימו לב איפה כל גרף חותך את ציר Y (כשx=0)',
-    'רמז: תומר: 48×0 = 0, אורן: 700+20×0 = 700',
-    'רמז: גרף שעובר דרך הראשית (0,0) מתחיל מ-0...'
+    'Hint: Notice where each graph intersects the Y axis (when x=0)',
+    'Hint: Tomer: 48×0 = 0, Oren: 700+20×0 = 700',
+    'Hint: A graph passing through the origin (0,0) starts from 0...'
   ],
   'qa2': [
-    'רמז: בדקו את נקודת ההתחלה של כל גרף על ציר Y',
-    'רמז: איזו נוסחה נותנת 700 כשx=0?',
-    'רמז: 700 + 20×0 = 700 - זה הגרף שמתחיל ב-700'
+    'Hint: Check the starting point of each graph on the Y axis',
+    'Hint: Which formula gives 700 when x=0?',
+    'Hint: 700 + 20×0 = 700 - this is the graph starting at 700'
   ],
   'qb1': [
-    'רמז: חפשו את נקודת החיתוך של שני הגרפים',
-    'רמז: פתרו: 48x = 700 + 20x',
-    'רמז: 28x = 700, אז x = ?'
+    'Hint: Find the intersection point of the two graphs',
+    'Hint: Solve: 48x = 700 + 20x',
+    'Hint: 28x = 700, so x = ?'
   ],
   'qb2': [
-    'רמז: הציבו את השטח שמצאתם בנוסחה של תומר',
-    'רמז: חשבו 48 × (התשובה מב1)',
-    'רמז: 48 × 25 = ?'
+    'Hint: Substitute the area you found in Tomer\'s formula',
+    'Hint: Calculate 48 × (the answer from B1)',
+    'Hint: 48 × 25 = ?'
   ],
   'qc1': [
-    'רמז: חשבו את המחיר אצל כל אחד עבור 17 מ"ר',
-    'רמז: תומר: 48×17 = ?, אורן: 700+20×17 = ?',
-    'רמז: השוו: 816 מול 1040 - מי נותן פחות?'
+    'Hint: Calculate the price for each gardener for 17 sq. m',
+    'Hint: Tomer: 48×17 = ?, Oren: 700+20×17 = ?',
+    'Hint: Compare: 816 vs 1040 - who charges less?'
   ],
   'qc2': [
-    'רמז: חסרו את המחיר הזול מהמחיר היקר',
-    'רמז: אורן - תומר = ההפרש',
-    'רמז: 1040 - 816 = ?'
+    'Hint: Subtract the cheaper price from the more expensive one',
+    'Hint: Oren - Tomer = the difference',
+    'Hint: 1040 - 816 = ?'
   ]
 };
 
@@ -768,7 +768,7 @@ function checkNumeric(id, correct) {
     hintBox.classList.add('show');
 
     if (attCounter) {
-      attCounter.textContent = 'ניסיון ' + attempts[id] + ' - נסה שוב!';
+      attCounter.textContent = 'Attempt ' + attempts[id] + ' - try again!';
     }
 
     input.value = '';
